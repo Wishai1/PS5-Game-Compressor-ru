@@ -211,7 +211,7 @@ typedef struct gc_game {
   char mount_status[32];
   gc_validation_state_t validation;
   char validation_status[32];
-  char primary_action[32];
+  char primary_action[128];
 } gc_game_t;
 
 typedef struct gc_operation {
@@ -3327,18 +3327,15 @@ detect_game_source_ex(gc_game_t *g, int exact_folder_size, int honor_cancel) {
   load_validation_state(g);
   populate_apr_index_state_from_roots(g);
 
-  if(g->source_kind == GC_SOURCE_COMPRESSED) {
+if(g->source_kind == GC_SOURCE_COMPRESSED) {
     snprintf(g->primary_action, sizeof(g->primary_action), "%s",
              g->validation == GC_VALIDATION_VALIDATED
-                 ? "Revalidate and Repair"
-                 : "Validate and Repair");
-  } else if(g->source_kind == GC_SOURCE_FOLDER ||
-            g->source_kind == GC_SOURCE_IMAGE) {
-    snprintf(g->primary_action, sizeof(g->primary_action), "%s", "Compress");
-  } else {
-    snprintf(g->primary_action, sizeof(g->primary_action), "%s",
-             "Unavailable");
-  }
+                 ? "Повторно Проверить и Восстановить"
+                 : "Проверить и Восстановить");
+} else if(g->source_kind == GC_SOURCE_FOLDER ||
+          g->source_kind == GC_SOURCE_IMAGE) {
+    snprintf(g->primary_action, sizeof(g->primary_action), "%s", "Сжать");
+}
 }
 
 static void
@@ -3966,10 +3963,10 @@ find_game_for_operation_source_path(const gc_operation_t *op, gc_game_t *out,
       candidate.source_kind == GC_SOURCE_COMPRESSED;
   if(candidate.source_kind == GC_SOURCE_COMPRESSED) {
     snprintf(candidate.primary_action, sizeof(candidate.primary_action), "%s",
-             "Validate and Repair");
+             "Проверить и Восстановить");
   } else {
     snprintf(candidate.primary_action, sizeof(candidate.primary_action), "%s",
-             "Compress");
+             "Сжать");
   }
   load_validation_state(&candidate);
   populate_apr_index_state_from_roots(&candidate);
@@ -6285,7 +6282,7 @@ init_compressed_output_game_for_mount(const gc_operation_t *op,
   }
   set_game_mount_status(out, 0, "not-mounted");
   snprintf(out->primary_action, sizeof(out->primary_action), "%s",
-           "Validate and Repair");
+           "Проверить и Восстановить");
 }
 
 static void
@@ -6319,7 +6316,7 @@ init_image_output_game_for_mount(const gc_operation_t *op,
     (void)free_bytes_for_output(out->source_path, &out->free_bytes);
   }
   set_game_mount_status(out, 0, "not-mounted");
-  snprintf(out->primary_action, sizeof(out->primary_action), "%s", "Compress");
+  snprintf(out->primary_action, sizeof(out->primary_action), "%s", "Сжать");
 }
 
 static int
@@ -10467,7 +10464,7 @@ uncompress_plan_request(const http_request_t *req) {
   snprintf(op.source_path, sizeof(op.source_path), "%s", source_path_arg);
   if(find_game_for_operation_source_path(&op, &game, 0) != 0 ||
      game.source_kind != GC_SOURCE_COMPRESSED) {
-    return serve_error(req, 400, "game is not compressed");
+    return serve_error(req, 400, "игра не сжата");
   }
   infer_uncompress_nested_from_shadow(game.source_path, nested_name,
                                       sizeof(nested_name), &nested_type);
