@@ -1,10 +1,10 @@
 <!doctype html>
-<html lang="en">
+<html lang="ru">
 
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Game Compressor</title>
+  <title>Game Compressor RU</title>
   <script>
     (function () {
       var match = document.cookie.match(/(?:^|;\s*)game_compressor_theme=([^;]*)/);
@@ -1880,7 +1880,7 @@
     .format-row {
       width: 100%;
       display: grid;
-      grid-template-columns: 1fr auto;
+      grid-template-columns: minmax(0, 1fr) auto;;
       gap: 12px;
       align-items: center;
       padding: 12px;
@@ -2506,9 +2506,9 @@
   <div class="app">
     <aside class="sidebar">
       <div class="sidebar-head">
-        <h1 class="sidebar-brand"><span id="sidebar-app-name">Game Compressor</span><span class="sidebar-version"
+        <h1 class="sidebar-brand"><span id="sidebar-app-name">Game Compressor RU</span><span class="sidebar-version"
             id="sidebar-version"></span></h1>
-        <div class="sidebar-meta" id="count-label">Scanning games</div>
+        <div class="sidebar-meta" id="count-label">Сканирование игр</div>
       </div>
       <div class="game-list" id="game-list">
         <div class="loading-state is-list" role="status" aria-live="polite">
@@ -2516,8 +2516,8 @@
             <span class="loading-dots"><span></span><span></span><span></span></span>
           </div>
           <div>
-            <div class="loading-title">Scanning games</div>
-            <div class="loading-subtitle">Looking for installed and compressed game entries.</div>
+            <div class="loading-title">Сканирование игр</div>
+            <div class="loading-subtitle">Поиск установленных и сжатых игр.</div>
           </div>
         </div>
       </div>
@@ -2526,22 +2526,22 @@
     <main class="content">
       <div class="topbar">
         <div class="theme-tools">
-          <div class="theme-toggle" role="group" aria-label="Color mode">
+          <div class="theme-toggle" role="group" aria-label="Цветовая схема">
             <button class="theme-option" id="theme-dark" type="button" data-theme="dark"
-              title="Dark mode" aria-label="Dark mode"></button>
+              title="Тёмная тема" aria-label="Тёмная тема"></button>
             <button class="theme-option" id="theme-light" type="button" data-theme="light"
-              title="Light mode" aria-label="Light mode"></button>
+              title="Светлая тема" aria-label="Светлая тема"></button>
           </div>
         </div>
         <div class="topbar-actions">
-          <div class="free-space-label" id="free-space-label">Free Space <span>--</span></div>
-          <button class="icon-btn" id="history-top" title="History" aria-label="History"></button>
-          <button class="icon-btn is-danger" id="terminate-top" title="Terminate Game Compressor"
-            aria-label="Terminate Game Compressor"></button>
+          <div class="free-space-label" id="free-space-label">Свободное место <span>--</span></div>
+          <button class="icon-btn" id="history-top" title="История" aria-label="История"></button>
+          <button class="icon-btn is-danger" id="terminate-top" title="Завершить Game Compressor"
+            aria-label="Завершить Game Compressor"></button>
         </div>
         <div class="terminate-reminder hidden" id="terminate-reminder" role="status" aria-live="polite">
-          <strong>Done processing.</strong>
-          <span>Before playing, terminate Game Compressor to avoid minor game performance effects.</span>
+          <strong>Обработка завершена.</strong>
+          <span>Перед запуском игры завершите Game Compressor, чтобы избежать незначительного влияния на производительность игры.</span>
         </div>
       </div>
       <section class="detail" id="detail">
@@ -2550,8 +2550,8 @@
             <span class="loading-dots"><span></span><span></span><span></span></span>
           </div>
           <div>
-            <div class="loading-title">Scanning games</div>
-            <div class="loading-subtitle">This can take a moment on PS5 storage.</div>
+            <div class="loading-title">Сканирование игр</div>
+            <div class="loading-subtitle">Это может занять некоторое время в памяти PS5.</div>
           </div>
         </div>
       </section>
@@ -2560,13 +2560,13 @@
 
   <div class="menu-layer" id="menu-layer"></div>
 
-  <button class="icon-btn info-launcher" id="info-top" title="About" aria-label="About Game Compressor"></button>
+  <button class="icon-btn info-launcher" id="info-top" title="О программе" aria-label="О Game Compressor"></button>
 
   <div class="modal-backdrop hidden" id="history-modal">
     <div class="modal" role="dialog" aria-modal="true" aria-labelledby="history-title">
       <div class="modal-head">
-        <div class="modal-title" id="history-title">History</div>
-        <button class="icon-btn" id="history-close" aria-label="Close"></button>
+        <div class="modal-title" id="history-title">История</div>
+        <button class="icon-btn" id="history-close" aria-label="Закрыть"></button>
       </div>
       <div class="modal-body" id="history-body"></div>
     </div>
@@ -2575,16 +2575,16 @@
   <div class="modal-backdrop hidden" id="info-modal">
     <div class="modal" role="dialog" aria-modal="true" aria-labelledby="info-title">
       <div class="modal-head">
-        <div class="modal-title" id="info-title">Game Compressor</div>
-        <button class="icon-btn" id="info-close" aria-label="Close"></button>
+        <div class="modal-title" id="info-title">Game Compressor RU</div>
+        <button class="icon-btn" id="info-close" aria-label="Закрыть"></button>
       </div>
       <div class="modal-body">
         <div class="about-copy">
-          <div class="about-main">Built by Juma Sayeh</div>
-          <div class="about-sub">Tested by Osama Abualia</div>
-          <div class="about-made">Made with <span class="about-image-icon about-heart" role="img"
-              aria-label="love"></span> in <span class="about-image-icon about-palestine" role="img"
-              aria-label="Palestine"></span></div>
+          <div class="about-main">Создано Juma Sayeh</div>
+          <div class="about-sub">Протестировано Osama Abualia</div>
+          <div class="about-made">Сделано с <span class="about-image-icon about-heart" role="img"
+              aria-label="любовь"></span> в <span class="about-image-icon about-palestine" role="img"
+              aria-label="Палестина"></span></div>
         </div>
       </div>
     </div>
@@ -2593,8 +2593,8 @@
   <div class="modal-backdrop hidden" id="usb-modal">
     <div class="modal" role="dialog" aria-modal="true" aria-labelledby="usb-title">
       <div class="modal-head">
-        <div class="modal-title" id="usb-title">Move to...</div>
-        <button class="icon-btn" id="usb-close" aria-label="Close"></button>
+        <div class="modal-title" id="usb-title">Переместить в...</div>
+        <button class="icon-btn" id="usb-close" aria-label="Закрыть"></button>
       </div>
       <div class="modal-body" id="usb-body"></div>
     </div>
@@ -2603,18 +2603,18 @@
   <div class="modal-backdrop hidden" id="ampr-version-modal">
     <div class="modal" role="dialog" aria-modal="true" aria-labelledby="ampr-version-title">
       <div class="modal-head">
-        <div class="modal-title" id="ampr-version-title">APR-EMU Version</div>
-        <button class="icon-btn" id="ampr-version-close" aria-label="Close"></button>
+        <div class="modal-title" id="ampr-version-title">Версия APR-EMU</div>
+        <button class="icon-btn" id="ampr-version-close" aria-label="Закрыть"></button>
       </div>
       <div class="modal-body">
-        <div class="format-section-title">Available Versions</div>
+        <div class="format-section-title">Доступные версии</div>
         <div class="ampr-version-list" id="ampr-version-list"></div>
         <div class="history-meta" id="ampr-version-status"></div>
         <div class="modal-actions">
           <input type="file" id="ampr-custom-file" accept=".sprx,.prx,application/octet-stream">
-          <button class="small-action" type="button" id="ampr-custom-upload">Upload Custom File</button>
-          <button class="small-action" type="button" id="ampr-version-cancel">Cancel</button>
-          <button class="small-action is-primary" type="button" id="ampr-version-apply">Apply Version</button>
+          <button class="small-action" type="button" id="ampr-custom-upload">Загрузить пользовательский файл</button>
+          <button class="small-action" type="button" id="ampr-version-cancel">Отмена</button>
+          <button class="small-action is-primary" type="button" id="ampr-version-apply">Применить версию</button>
         </div>
       </div>
     </div>
@@ -2623,90 +2623,90 @@
   <div class="modal-backdrop hidden" id="format-modal">
     <div class="modal" role="dialog" aria-modal="true" aria-labelledby="format-title">
       <div class="modal-head">
-        <div class="modal-title" id="format-title">Compression Format</div>
-        <button class="icon-btn" id="format-close" aria-label="Close"></button>
+        <div class="modal-title" id="format-title">Формат сжатия</div>
+        <button class="icon-btn" id="format-close" aria-label="Закрыть"></button>
       </div>
       <div class="modal-body">
-        <div class="format-section-title" id="format-output-section">Output</div>
+        <div class="format-section-title" id="format-output-section">Вывод</div>
         <div class="format-output-note" id="format-compress-output">
           <div>
-            <div class="history-title">Compressed archive (.ffpfsc)</div>
+            <div class="history-title">Сжатый архив (.ffpfsc)</div>
             <div class="history-meta" id="format-compress-output-name">&lt;TITLE_ID&gt;.ffpfsc</div>
           </div>
-          <span class="chip selected">Output</span>
+          <span class="chip selected">Вывод</span>
         </div>
         <div class="format-switch-note" id="format-make-image-hint">
-          Need a direct .exfat or .ffpfs file?
-          <button class="format-link" type="button" id="format-switch-make-image">Make Image instead</button>
+          Нужен файл .exfat или .ffpfs напрямую?
+          <button class="format-link" type="button" id="format-switch-make-image">Вместо этого создать образ</button>
         </div>
-        <div class="format-section-title" id="format-inner-section">Inner image format</div>
+        <div class="format-section-title" id="format-inner-section">Формат внутреннего образа</div>
         <div class="format-grid" id="format-grid">
           <button class="format-row is-default-choice" type="button" data-compress-format="exfat">
             <div>
               <div class="history-title" id="format-exfat-title">exFAT</div>
               <div class="history-meta" id="format-exfat-name">&lt;TITLE_ID&gt;.exfat</div>
             </div>
-            <span class="chip">Select</span>
+            <span class="chip">Выбрать</span>
           </button>
           <button class="format-row" type="button" data-compress-format="pfs">
             <div>
-              <div class="history-title" id="format-pfs-title">PFS Experimental</div>
-              <div class="history-meta" id="format-pfs-name">Experimental - pfs_image.dat</div>
+              <div class="history-title" id="format-pfs-title">PFS Экспериментальный</div>
+              <div class="history-meta" id="format-pfs-name">Экспериментальный - pfs_image.dat</div>
             </div>
-            <span class="chip">Select</span>
+            <span class="chip">Выбрать</span>
           </button>
         </div>
-        <div class="format-section-title">Destination</div>
+        <div class="format-section-title">Назначение</div>
         <div class="format-grid">
           <button class="format-row is-default-choice" type="button" data-compress-destination="keep">
             <div>
-              <div class="history-title" id="format-destination-keep-title">Compress in place</div>
-              <div class="history-meta" id="format-destination-keep">Write next to the current game</div>
+              <div class="history-title" id="format-destination-keep-title">Сжать в текущем расположении</div>
+              <div class="history-meta" id="format-destination-keep">Записать рядом с текущей игрой</div>
             </div>
-            <span class="chip">Select</span>
+            <span class="chip">Выбрать</span>
           </button>
           <button class="format-row" type="button" data-compress-destination="internal">
             <div>
-              <div class="history-title" id="format-destination-internal-title">Internal SSD</div>
-              <div class="history-meta" id="format-destination-internal">Write compressed file to /data/homebrew</div>
+              <div class="history-title" id="format-destination-internal-title">Внутренний SSD</div>
+              <div class="history-meta" id="format-destination-internal">Записать сжатый файл в /data/homebrew</div>
             </div>
-            <span class="chip">Select</span>
+            <span class="chip">Выбрать</span>
           </button>
           <button class="format-row" type="button" data-compress-destination="usb">
             <div>
-              <div class="history-title" id="format-destination-usb-title">External Storage</div>
-              <div class="history-meta" id="format-destination-usb">Write compressed file to the USB target below</div>
+              <div class="history-title" id="format-destination-usb-title">Внешнее хранилище</div>
+              <div class="history-meta" id="format-destination-usb">Записать сжатый файл на выбранный ниже USB-накопитель</div>
             </div>
-            <span class="chip">Select</span>
+            <span class="chip">Выбрать</span>
           </button>
         </div>
         <div class="compress-usb-panel hidden" id="compress-usb-panel">
           <div class="usb-picker" id="compress-usb-picker"></div>
           <div class="compress-usb-meta" id="compress-usb-meta"></div>
         </div>
-        <div class="format-section-title" id="compress-source-title">Original Handling</div>
+        <div class="format-section-title" id="compress-source-title">Обработка оригинала</div>
         <div class="format-grid is-three-up" id="compress-source-grid">
           <button class="format-row" type="button" data-compress-handling="keep">
             <div>
-              <div class="history-title">Keep original</div>
-              <div class="history-meta">Original remains untouched</div>
+              <div class="history-title">Сохранить оригинал</div>
+              <div class="history-meta">Оригинал останется без изменений</div>
             </div>
           </button>
           <button class="format-row is-default-choice" type="button" data-compress-handling="after">
             <div>
-              <div class="history-title">Delete after verified</div>
-              <div class="history-meta" id="format-safe-space">Requires full-size free space</div>
+              <div class="history-title">Удалить после проверки</div>
+              <div class="history-meta" id="format-safe-space">Оригинал будет удалён после успешной проверки</div>
             </div>
           </button>
           <button class="format-row" type="button" data-compress-handling="stream">
             <div>
-              <div class="history-title">Destructive</div>
-              <div class="history-meta" id="format-stream-space">Requires 1 GB free space</div>
+              <div class="history-title">Удаление оригинала на лету</div>
+              <div class="history-meta" id="format-stream-space">Требуется 1 ГБ свободного места</div>
             </div>
           </button>
         </div>
         <div class="modal-actions">
-          <button class="small-action is-primary" type="button" id="format-start">Compress</button>
+          <button class="small-action is-primary" type="button" id="format-start">Сжать</button>
         </div>
       </div>
     </div>
@@ -2715,74 +2715,74 @@
   <div class="modal-backdrop hidden" id="uncompress-modal">
     <div class="modal" role="dialog" aria-modal="true" aria-labelledby="uncompress-title">
       <div class="modal-head">
-        <div class="modal-title" id="uncompress-title">Uncompress</div>
-        <button class="icon-btn" id="uncompress-close" aria-label="Close"></button>
+        <div class="modal-title" id="uncompress-title">Распаковать</div>
+        <button class="icon-btn" id="uncompress-close" aria-label="Закрыть"></button>
       </div>
       <div class="modal-body">
-        <div class="format-section-title">Output</div>
+        <div class="format-section-title">Вывод</div>
         <div class="format-grid">
           <button class="format-row is-default-choice" type="button" data-uncompress-mode="image">
             <div>
-              <div class="history-title" id="uncompress-image-title">Image</div>
-              <div class="history-meta" id="uncompress-image-name">Detecting image type</div>
+              <div class="history-title" id="uncompress-image-title">Образ</div>
+              <div class="history-meta" id="uncompress-image-name">Определение типа образа</div>
             </div>
-            <span class="chip">Select</span>
+            <span class="chip">Выбрать</span>
           </button>
           <button class="format-row" type="button" data-uncompress-mode="files">
             <div>
-              <div class="history-title">Files</div>
-              <div class="history-meta" id="uncompress-files-name">App folder</div>
+              <div class="history-title">Файлы</div>
+              <div class="history-meta" id="uncompress-files-name">Папка приложения</div>
             </div>
-            <span class="chip">Select</span>
+            <span class="chip">Выбрать</span>
           </button>
         </div>
-        <div class="format-section-title">Destination</div>
+        <div class="format-section-title">Назначение</div>
         <div class="format-grid">
           <button class="format-row is-default-choice" type="button" data-uncompress-destination="inplace">
             <div>
-              <div class="history-title">In place</div>
-              <div class="history-meta" id="uncompress-inplace-meta">Write next to the compressed image</div>
+              <div class="history-title">На месте</div>
+              <div class="history-meta" id="uncompress-inplace-meta">Записать рядом со сжатым образом</div>
             </div>
-            <span class="chip">Select</span>
+            <span class="chip">Выбрать</span>
           </button>
           <button class="format-row" type="button" data-uncompress-destination="internal" id="uncompress-internal-row">
             <div>
-              <div class="history-title">Internal SSD</div>
-              <div class="history-meta">Write to /data/homebrew</div>
+              <div class="history-title">Внутренний SSD</div>
+              <div class="history-meta">Записать в /data/homebrew</div>
             </div>
-            <span class="chip">Select</span>
+            <span class="chip">Выбрать</span>
           </button>
           <button class="format-row" type="button" data-uncompress-destination="usb" id="uncompress-usb-row">
             <div>
-              <div class="history-title">External Storage</div>
-              <div class="history-meta">Write to the USB target below</div>
+              <div class="history-title">Внешний накопитель</div>
+              <div class="history-meta">Записать на целевой USB-накопитель ниже</div>
             </div>
-            <span class="chip">Select</span>
+            <span class="chip">Выбрать</span>
           </button>
         </div>
         <div class="compress-usb-panel hidden" id="uncompress-usb-panel">
           <div class="usb-picker" id="uncompress-usb-picker"></div>
           <div class="compress-usb-meta" id="uncompress-usb-meta"></div>
         </div>
-        <div class="format-section-title" id="uncompress-source-title">Original source</div>
+        <div class="format-section-title" id="uncompress-source-title">Оригинальный источник</div>
         <div class="format-grid" id="uncompress-policy-grid">
           <button class="format-row" type="button" data-uncompress-policy="keep">
             <div>
-              <div class="history-title">Keep both</div>
-              <div class="history-meta">Leave the compressed image after output is written</div>
+              <div class="history-title">Сохранить оба</div>
+              <div class="history-meta">Оставить сжатый образ после записи вывода</div>
             </div>
-            <span class="chip">Select</span>
+            <span class="chip">Выбрать</span>
           </button>
           <button class="format-row" type="button" data-uncompress-policy="after">
             <div>
-              <div class="history-title">Delete after completion</div>
-              <div class="history-meta">Remove the compressed image after output is ready</div>
+              <div class="history-title">Удалить после завершения</div>
+              <div class="history-meta">Удалить сжатый образ после готовности вывода</div>
             </div>
-            <span class="chip">Select</span>
+            <span class="chip">Выбрать</span>
           </button>
         </div>
         <div class="modal-actions">
-          <button class="small-action is-primary" type="button" id="uncompress-start">Uncompress</button>
+          <button class="small-action is-primary" type="button" id="uncompress-start">Распаковать</button>
         </div>
       </div>
     </div>
@@ -2791,19 +2791,19 @@
   <div class="modal-backdrop hidden" id="delete-modal">
     <div class="modal" role="dialog" aria-modal="true" aria-labelledby="delete-title">
       <div class="modal-head">
-        <div class="modal-title" id="delete-title">Delete Game Data</div>
-        <button class="icon-btn" id="delete-close" aria-label="Close"></button>
+        <div class="modal-title" id="delete-title">Удалить данные игры</div>
+        <button class="icon-btn" id="delete-close" aria-label="Закрыть"></button>
       </div>
       <div class="modal-body">
         <div class="delete-warning">
-          <div class="history-title" id="delete-game-name">Game data</div>
-          <div class="history-meta" id="delete-warning-text">This permanently deletes the selected game data from
-            storage. This cannot be undone.</div>
+          <div class="history-title" id="delete-game-name">Данные игры</div>
+          <div class="history-meta" id="delete-warning-text">Это навсегда удалит выбранные данные игры из хранилища. Это действие невозможно отменить.</div>
+												 
           <div class="history-meta" id="delete-game-path"></div>
         </div>
         <div class="modal-actions">
-          <button class="small-action" type="button" id="delete-cancel">Cancel</button>
-          <button class="small-action is-danger" type="button" id="delete-confirm">Delete Game Data</button>
+          <button class="small-action" type="button" id="delete-cancel">Отмена</button>
+          <button class="small-action is-danger" type="button" id="delete-confirm">Удалить данные игры</button>
         </div>
       </div>
     </div>
@@ -2812,7 +2812,7 @@
   <div class="ui-notice-layer hidden" id="ui-notice-layer" role="status" aria-live="polite">
     <div class="ui-notice" id="ui-notice"></div>
   </div>
-
+  
   <script>
     const THEME_COOKIE = 'game_compressor_theme';
     const SELECTED_GAME_COOKIE = 'game_compressor_selected_title';
@@ -2834,6 +2834,8 @@
       job: null,
       theme: window.__gcInitialTheme === 'dark' ? 'dark' : 'light',
       savedTheme: window.__gcInitialTheme === 'dark' ? 'dark' : 'light',
+													  
+					   
       themeSaving: false,
       speed: {
         activeId: '',
@@ -2846,6 +2848,7 @@
       selected: '',
       revealSelected: false,
       moveGame: null,
+   
       moveMode: 'move',
       compressGame: null,
       compressAction: 'compress',
@@ -2860,6 +2863,7 @@
       compressDestinationChooserOpen: false,
       uncompressGame: null,
       uncompressPlan: null,
+     
       uncompressPlanLoading: false,
       uncompressPlanError: '',
       uncompressMode: 'image',
@@ -2889,7 +2893,8 @@
       iconCache: {},
       iconRequests: {},
 	      iconFailures: {},
-	      animatedIconKeys: {},
+	  
+        animatedIconKeys: {},
 	      autoSelectedOutputs: {},
 	      renderKeys: {
 	        header: '',
@@ -2929,8 +2934,8 @@
       return '';
     }
 
-    function writeCookie(name, value, maxAgeDays) {
-      const maxAge = Math.max(1, Math.floor(Number(maxAgeDays || 180))) * 24 * 60 * 60;
+function writeCookie(name, value, maxAgeDays) {
+    const maxAge = Math.max(1, Math.floor(Number(maxAgeDays || 180))) * 24 * 60 * 60;
       document.cookie = encodeURIComponent(name) + '=' + encodeURIComponent(value) +
         '; Max-Age=' + maxAge + '; Path=/; SameSite=Lax';
     }
@@ -2985,7 +2990,7 @@
 
     function shortSize(bytes) {
       const value = Number(bytes || 0);
-      const units = ['B', 'KB', 'MB', 'GB', 'TB'];
+      const units = ['Б', 'КБ', 'МБ', 'ГБ', 'ТБ'];
       let n = value;
       let i = 0;
       while (n >= 1024 && i < units.length - 1) {
@@ -2998,16 +3003,16 @@
     function formatByteText(text) {
       return String(text || '').replace(/\b(\d{1,20})\s+more\s+bytes?\b/gi, (_match, value) => {
         const bytes = Number(value);
-        return Number.isFinite(bytes) ? shortSize(bytes) + ' more' : value + ' more bytes';
+        return Number.isFinite(bytes) ? shortSize(bytes) + ' еще' : value + ' еще байт';
       }).replace(/\b(\d{1,20})\s+bytes?\b/gi, (_match, value) => {
         const bytes = Number(value);
-        return Number.isFinite(bytes) ? shortSize(bytes) : value + ' bytes';
+        return Number.isFinite(bytes) ? shortSize(bytes) : value + ' байт';
       });
     }
 
     function cardSize(bytes) {
       const value = Number(bytes || 0);
-      const units = ['B', 'KB', 'MB', 'GB', 'TB'];
+      const units = ['Б', 'КБ', 'МБ', 'ГБ', 'ТБ'];
       let n = value;
       let i = 0;
       while (n >= 1024 && i < units.length - 1) {
@@ -3015,12 +3020,13 @@
         i++;
       }
       const precision = i === 0 ? 0 : i >= 3 ? 1 : n >= 10 ? 1 : 2;
+						  
       return n.toFixed(precision).replace(/\.0+$/, '').replace(/(\.\d*[1-9])0+$/, '$1') + units[i];
     }
 
     function speedText(bytesPerSecond) {
       const value = Number(bytesPerSecond || 0);
-      return value > 0 ? shortSize(value) + '/s' : '--';
+      return value > 0 ? shortSize(value) + '/с' : '--';
     }
 
     function reportedSpeedBytesPerSecond(job) {
@@ -3044,6 +3050,7 @@
       const text = await res.text();
       let data = {};
       try { data = text ? JSON.parse(text) : {}; } catch (err) { }
+					   
       if (!res.ok) {
         const e = new Error(formatByteText(data.error || text || res.statusText));
         e.data = data;
@@ -3059,10 +3066,12 @@
     function appVersionText() {
       const version = cleanAppVersion(state.appVersion);
       return version ? version : '';
+				   
     }
 
     function renderAppChrome() {
       const name = String(state.appName || 'Game Compressor').trim() || 'Game Compressor';
+						
       const version = appVersionText();
       const sidebarName = $('sidebar-app-name');
       const sidebarVersion = $('sidebar-version');
@@ -3070,6 +3079,7 @@
       if (sidebarName) sidebarName.textContent = name;
       if (sidebarVersion) sidebarVersion.textContent = version;
       if (infoTitle) infoTitle.textContent = version ? name + ' ' + version : name;
+								  
     }
 
     async function loadAppStatus() {
@@ -3085,6 +3095,7 @@
 
     function normalizeTheme(value) {
       return String(value || '').toLowerCase() === 'dark' ? 'dark' : 'light';
+					   
     }
 
     function applyTheme(theme) {
@@ -3134,7 +3145,7 @@
         applyTheme(saved);
       } catch (err) {
         applyTheme(previous);
-        alert(formatByteText(err.message || 'Could not save display mode'));
+        alert(formatByteText(err.message || 'Не удалось сохранить режим отображения'));
       } finally {
         state.themeSaving = false;
       }
@@ -3161,6 +3172,7 @@
         0x983e5152, 0xa831c66d, 0xb00327c8, 0xbf597fc7,
         0xc6e00bf3, 0xd5a79147, 0x06ca6351, 0x14292967,
         0x27b70a85, 0x2e1b2138, 0x4d2c6dfc, 0x53380d13,
+										   
         0x650a7354, 0x766a0abb, 0x81c2c92e, 0x92722c85,
         0xa2bfe8a1, 0xa81a664b, 0xc24b8b70, 0xc76c51a3,
         0xd192e819, 0xd6990624, 0xf40e3585, 0x106aa070,
@@ -3280,7 +3292,8 @@
         if (!entry || entry.size || !entry.url) return;
         try {
           const res = await fetch(entry.url, { method: 'HEAD', cache: 'no-store' });
-          if (!res.ok) return;
+       
+           if (!res.ok) return;
           const size = amprSizeFromHeaders(res.headers);
           if (size) entry.size = size;
         } catch (err) { }
@@ -3316,12 +3329,13 @@
         url = new URL(String(path), AMPR_MANIFEST_URL).toString();
       } catch (err) {
         return null;
-      }
+    }
       const sha256 = String(value.sha256 || value.sha || value.hash || '').trim().toLowerCase();
       return {
         version,
         url,
         sha256: /^[0-9a-f]{64}$/.test(sha256) ? sha256 : '',
+					
         size: amprEntryDeclaredSize(value)
       };
     }
@@ -3339,6 +3353,7 @@
                 url: new URL(path, AMPR_MANIFEST_URL).toString(),
                 sha256: '',
                 size: 0
+  
               });
             } catch (err) { }
           }
@@ -3356,7 +3371,7 @@
         const nextHint = amprSafeVersion(key) ? key : (value.version || value.tag || versionHint);
         collectAmprManifestEntries(value[key], out, nextHint, depth + 1);
       });
-    }
+}
 
     function latestAmprManifestEntry(manifest) {
       const list = amprManifestEntryList(manifest);
@@ -3380,10 +3395,10 @@
 
     async function fetchAmprManifestEntries(options) {
       const res = await fetch(AMPR_MANIFEST_URL, { cache: 'no-store' });
-      if (!res.ok) throw new Error('APR-EMU manifest fetch failed');
+      if (!res.ok) throw new Error('Не удалось загрузить манифест APR-EMU');
       const manifest = await res.json();
       const list = amprManifestEntryList(manifest);
-      if (!list.length) throw new Error('APR-EMU manifest did not include libSceAmpr.sprx');
+      if (!list.length) throw new Error('Манифест APR-EMU не содержит libSceAmpr.sprx');
       if (options && options.includeSizes) await enrichAmprEntrySizes(list);
       return list;
     }
@@ -3395,7 +3410,7 @@
 
     async function cacheAmprEntry(entry, options) {
       const res = await fetch(entry.url, { cache: 'no-store' });
-      if (!res.ok) throw new Error('APR-EMU binary download failed');
+      if (!res.ok) throw new Error('Не удалось скачать бинарный файл APR-EMU');
       const bytes = await res.arrayBuffer();
       let url = '/api/gc/ampr/upload?version=' + encodeURIComponent(entry.version) +
         '&sourceUrl=' + encodeURIComponent(entry.url) +
@@ -3426,7 +3441,7 @@
         state.amprLatestError = '';
         return true;
       } catch (err) {
-        state.amprLatestError = err.message || 'APR-EMU update check failed';
+        state.amprLatestError = err.message || 'Не удалось проверить обновление APR-EMU';
         return false;
       }
     }
@@ -3463,18 +3478,18 @@
     }
 
     function showPs5CustomAmprUploadMessage() {
-      const message = 'Upload custom libSceAmpr from your computer. Not supported on PS5 browser.';
+      const message = 'Загрузите пользовательский libSceAmpr со своего компьютера. Не поддерживается в браузере PS5.';
       const status = $('ampr-version-status');
       if (status) status.textContent = message;
       alert(message);
     }
 
     async function cacheCustomAmprFile(file) {
-      if (!file || !file.size) throw new Error('Custom APR-EMU file is empty');
+      if (!file || !file.size) throw new Error('Пользовательский файл APR-EMU пуст');
       const bytes = await file.arrayBuffer();
       const sha256 = await sha256Hex(bytes);
       if (!sha256HexLooksValid(sha256)) {
-        throw new Error('Custom APR-EMU SHA-256 could not be computed');
+        throw new Error('Не удалось вычислить SHA-256 пользовательского файла APR-EMU');
       }
       const version = amprCustomVersionForSha(sha256);
       const url = '/api/gc/ampr/upload?version=' + encodeURIComponent(version) +
@@ -3507,12 +3522,12 @@
           g = selectedGame() || g;
         }
         if (!g.amprLatestVersion || !g.amprLatestSha256) {
-          throw new Error(state.amprLatestError || 'APR-EMU latest cache is unavailable');
+          throw new Error(state.amprLatestError || 'Последний кэш APR-EMU недоступен');
         }
         await enqueueAmprUpdate(g, g.amprLatestVersion, g.amprLatestSha256,
           'latest');
       } catch (err) {
-        alert(formatByteText(err.message || 'APR-EMU update failed'));
+        alert(formatByteText(err.message || 'Обновление APR-EMU не удалось'));
       } finally {
         state.amprBusy = false;
         refreshPrimaryArea(selectedGame());
@@ -3530,7 +3545,7 @@
         startPollBurst(6000);
         await refreshAll();
       } catch (err) {
-        alert(formatByteText(err.message || 'Original APR-EMU restore failed'));
+        alert(formatByteText(err.message || 'Восстановление оригинального APR-EMU не удалось'));
       } finally {
         state.amprBusy = false;
         refreshPrimaryArea(selectedGame());
@@ -3551,6 +3566,16 @@
       });
     }
 
+
+
+
+
+
+
+
+
+
+
     async function loadAmprVersionEntries(g) {
       const map = {};
       let manifestError = '';
@@ -3563,7 +3588,7 @@
           }));
         });
       } catch (err) {
-        manifestError = err.message || 'APR-EMU manifest fetch failed';
+        manifestError = err.message || 'Не удалось загрузить манифест APR-EMU';
       }
       try {
         const cached = await api('/api/gc/ampr/versions');
@@ -3620,26 +3645,27 @@
       const custom = $('ampr-custom-upload');
       if (!list || !status || !apply) return;
       if (state.amprPickerLoading) {
-        list.innerHTML = '<div class="empty">Loading APR-EMU versions</div>';
+        list.innerHTML = '<div class="empty">Загрузка версий APR-EMU</div>';
       } else if (state.amprPickerError) {
         list.innerHTML = '<div class="empty">' + escapeHtml(state.amprPickerError) + '</div>';
       } else if (!state.amprPickerVersions.length) {
-        list.innerHTML = '<div class="empty">No APR-EMU versions cached or available</div>';
+        list.innerHTML = '<div class="empty">Нет кэшированных или доступных версий APR-EMU</div>';
       } else {
         list.innerHTML = state.amprPickerVersions.map((entry) => {
           const selected = entry.version === state.amprPickerSelected;
           const current = amprEntryIsCurrent(g, entry);
           const chips = [];
-          if (current) chips.push('Current');
-          if (entry.isLatest) chips.push('Latest');
-          chips.push(entry.cached ? 'Cached' : 'Download');
+          if (current) chips.push('Текущая');
+          if (entry.isLatest) chips.push('Последняя');
+          chips.push(entry.cached ? 'В кэше' : 'Скачать');
+      
           const sizeText = amprSafeSize(entry.size)
-            ? 'Size ' + shortSize(entry.size)
-            : 'Size after download';
+            ? 'Размер ' + shortSize(entry.size)
+            : 'Размер после скачивания';
           const meta = [
             sizeText,
-            entry.sha256 ? 'SHA ' + entry.sha256.slice(0, 12) : 'SHA after download',
-            entry.cached ? 'stored on PS5' : 'downloads before applying'
+            entry.sha256 ? 'SHA ' + entry.sha256.slice(0, 12) : 'SHA после скачивания',
+            entry.cached ? 'сохранено на PS5' : 'скачивается перед применением'
           ].join(' - ');
           return '<button class="format-row' +
             (selected ? ' is-selected' : '') +
@@ -3648,35 +3674,40 @@
             '<div class="history-title">APR v' + escapeHtml(entry.version) + '</div>' +
             '<div class="history-meta">' + escapeHtml(meta) + '</div>' +
             '</div>' +
-            '<span class="chip ' + (selected ? 'selected' : (current ? 'ok' : (entry.isLatest ? 'ampr' : ''))) + '">' +
-            escapeHtml(selected ? 'Selected' : chips[0]) + '</span>' +
+            '<span class="chip ' + (selected ?
+              'selected' : (current ? 'ok' : (entry.isLatest ? 'ampr' : ''))) + '">' +
+            escapeHtml(selected ? 'Выбрано' : chips[0]) + '</span>' +
             '</button>';
         }).join('');
       }
       const selectedEntry = amprSelectedEntry();
       const selectedCurrent = amprEntryIsCurrent(g, selectedEntry);
       apply.disabled = state.amprPickerLoading || state.amprPickerBusy ||
-        !selectedEntry || selectedCurrent || jobIsBusy();
+        !selectedEntry || selectedCurrent || 
+        jobIsBusy();
       apply.textContent = state.amprPickerBusy
-        ? 'Applying...'
-        : (selectedCurrent ? 'Installed' : 'Apply Version');
+        ? 'Применение...'
+        : (selectedCurrent ? 'Установлено' : 'Применить версию');
       if (custom) {
         custom.disabled = state.amprPickerLoading || state.amprPickerBusy ||
           !g || jobIsBusy();
-        custom.textContent = state.amprPickerBusy ? 'Working...' : 'Upload Custom File';
+        custom.textContent = state.amprPickerBusy ? 'Выполнение...' : 'Загрузить пользовательский файл';
       }
       if (cancel) cancel.disabled = state.amprPickerBusy;
+    
       if (close) close.disabled = state.amprPickerBusy;
       if (state.amprPickerBusy) {
-        status.textContent = state.amprPickerBusyText || 'Preparing APR-EMU';
+        status.textContent = state.amprPickerBusyText ||
+          'Подготовка APR-EMU';
       } else if (state.amprPickerError) {
         status.textContent = '';
       } else if (selectedEntry) {
         status.textContent = selectedCurrent
-          ? 'Selected version is already installed.'
+          ?
+            'Выбранная версия уже установлена.'
           : (selectedEntry.cached
-            ? 'Selected version is cached and ready to apply.'
-            : 'Selected version will be downloaded, cached, then applied.');
+            ? 'Выбранная версия кэширована и готова к применению.'
+            : 'Выбранная версия будет скачана, кэширована, а затем применена.');
       } else {
         status.textContent = '';
       }
@@ -3687,7 +3718,7 @@
           renderAmprVersionModal();
         });
       });
-    }
+}
 
     async function showAmprVersionModal(g) {
       if (!g || !g.sourcePath || !g.amprPresent) return;
@@ -3698,7 +3729,7 @@
       state.amprPickerBusy = false;
       state.amprPickerBusyText = '';
       state.amprPickerError = '';
-      $('ampr-version-title').textContent = 'APR-EMU Version - ' + (g.name || g.titleId);
+      $('ampr-version-title').textContent = 'Версия APR-EMU - ' + (g.name || g.titleId);
       renderAmprVersionModal();
       showModal('ampr-version-modal');
       try {
@@ -3713,7 +3744,8 @@
         state.amprPickerError = '';
       } catch (err) {
         state.amprPickerVersions = [];
-        state.amprPickerError = err.message || 'APR-EMU version list failed';
+        state.amprPickerError = err.message ||
+          'Не удалось загрузить список версий APR-EMU';
       } finally {
         state.amprPickerLoading = false;
         renderAmprVersionModal();
@@ -3736,7 +3768,7 @@
       if (!g || !file || state.amprPickerBusy || jobIsBusy()) return;
       state.amprPickerBusy = true;
       state.amprBusy = true;
-      state.amprPickerBusyText = 'Hashing and uploading custom APR-EMU file';
+      state.amprPickerBusyText = 'Хеширование и загрузка пользовательского файла APR-EMU';
       state.amprPickerError = '';
       renderAmprVersionModal();
       refreshPrimaryArea(g);
@@ -3748,7 +3780,7 @@
         ];
         state.amprPickerSelected = entry.version;
         if (amprEntryIsCurrent(g, entry)) return;
-        state.amprPickerBusyText = 'Applying custom APR-EMU file';
+        state.amprPickerBusyText = 'Применение пользовательского файла APR-EMU';
         renderAmprVersionModal();
         hideModal('ampr-version-modal');
         await enqueueAmprUpdate(g, entry.version, entry.sha256, 'custom');
@@ -3756,7 +3788,7 @@
         state.amprPickerVersions = [];
         state.amprPickerSelected = '';
       } catch (err) {
-        state.amprPickerError = err.message || 'Custom APR-EMU upload failed';
+        state.amprPickerError = err.message || 'Не удалось загрузить пользовательский файл APR-EMU';
         alert(formatByteText(state.amprPickerError));
       } finally {
         state.amprPickerBusy = false;
@@ -3775,26 +3807,26 @@
       state.amprPickerBusy = true;
       state.amprBusy = true;
       state.amprPickerBusyText = entry.cached
-        ? 'Applying cached APR-EMU version'
-        : 'Downloading and preparing APR-EMU';
+        ? 'Применение кэшированной версии APR-EMU'
+        : 'Скачивание и подготовка APR-EMU';
       renderAmprVersionModal();
       refreshPrimaryArea(g);
       try {
         if (!entry.cached || !entry.sha256) {
-          if (!entry.url) throw new Error('Selected APR-EMU version has no download URL');
+          if (!entry.url) throw new Error('У выбранной версии APR-EMU нет URL для скачивания');
           entry = await cacheAmprEntry(entry, { setLatest: !!entry.isLatest });
           state.amprPickerVersions = state.amprPickerVersions.map((item) =>
             item.version === entry.version ? Object.assign({}, item, entry) : item
           );
         }
-        if (!entry.sha256) throw new Error('Selected APR-EMU SHA-256 is unavailable');
+        if (!entry.sha256) throw new Error('SHA-256 выбранной версии APR-EMU недоступен');
         hideModal('ampr-version-modal');
         await enqueueAmprUpdate(g, entry.version, entry.sha256, 'manual');
         state.amprPickerGame = null;
         state.amprPickerVersions = [];
         state.amprPickerSelected = '';
       } catch (err) {
-        state.amprPickerError = err.message || 'APR-EMU version apply failed';
+        state.amprPickerError = err.message || 'Не удалось применить версию APR-EMU';
         alert(formatByteText(state.amprPickerError));
       } finally {
         state.amprPickerBusy = false;
@@ -3860,7 +3892,8 @@
         startSizePollBurst(sizeWorkActive(g) ? 15000 : 8000);
         await refreshAll();
       } catch (err) {
-        /* Size priority is advisory; keep the selected game usable. */
+        /* Приоритет размера носит рекомендательный характер;
+           сохраняем выбранную игру работоспособной. */
       } finally {
         delete sizePriorityInFlight[path];
       }
@@ -3884,19 +3917,19 @@
 	        const bBusy = b && b.activeOp ? 2 : (b && b.pendingOp ? 1 : 0);
 	        if (aBusy !== bBusy) return bBusy - aBusy;
 	        const aOutput = gameInstanceRole(a) === 'current output';
-	        const bOutput = gameInstanceRole(b) === 'current output';
+	         const bOutput = gameInstanceRole(b) === 'current output';
 	        if (aOutput !== bOutput) return aOutput ? -1 : 1;
 	        const aHasIcon = !!(a && a.hasIcon);
 	        const bHasIcon = !!(b && b.hasIcon);
         if (aHasIcon !== bHasIcon) return aHasIcon ? -1 : 1;
         const byName = gameSortName(a).localeCompare(gameSortName(b), undefined, {
           numeric: true,
-          sensitivity: 'base'
+           sensitivity: 'base'
         });
         if (byName) return byName;
         return String((a && a.titleId) || '').localeCompare(String((b && b.titleId) || ''));
       });
-    }
+}
 
     function activeJob() {
       const job = state.job || {};
@@ -3926,132 +3959,138 @@
       const repairBlocks = Number((job && job.repairBlocks) ||
         (op && (op.badBlocksFound || op.repairedBlocks)) || 0);
 
+
+
+																						
       if (jobCanceling(job)) {
-        return { label: 'Canceling', className: 'closing' };
+        return { label: 'Отмена', className: 'closing' };
       }
       if (phase === 'resolving') {
-        return { label: 'Resolving', className: 'finalizing' };
+        return { label: 'Разрешение', className: 'finalizing' };
       }
       if (phase === 'measuring') {
-        return { label: 'Measuring', className: 'scanning' };
+        return { label: 'Измерение', className: 'scanning' };
       }
       if (phase === 'closing' || current.indexOf('closing') !== -1) {
-        return { label: 'Closing', className: 'closing' };
+        return { label: 'Закрытие', className: 'closing' };
       }
       if (action === 'refresh-mount') {
         if (phase === 'hiding' || current.indexOf('hiding other') !== -1) {
-          return { label: 'Hiding other instances', className: 'mounting' };
+          return { label: 'Скрытие других копий', className: 'mounting' };
         }
         if (phase === 'restoring' || current.indexOf('restoring other') !== -1) {
-          return { label: 'Restoring other instances', className: 'restoring' };
+          return { label: 'Восстановление других копий', className: 'restoring' };
         }
         if (phase === 'complete') {
-          return { label: 'Done', className: 'finalizing' };
+          return { label: 'Готово', className: 'finalizing' };
         }
-        return { label: 'Mounting', className: 'mounting' };
+        return { label: 'Монтирование', className: 'mounting' };
       }
       if (action === 'delete-game-data') {
-        return { label: 'Deleting', className: 'deleting' };
+        return { label: 'Удаление', className: 'deleting' };
       }
       if (action === 'build-ampr-index') {
         if (phase === 'complete') {
-          return { label: 'APR Indexed', className: 'finalizing' };
+          return { label: 'Индекс APR создан', className: 'finalizing' };
         }
-        return { label: 'Building APR Index', className: 'scanning' };
+        return { label: 'Создание индекса APR', className: 'scanning' };
       }
       if (action === 'update-ampr') {
         if (phase === 'complete') {
-          return { label: 'APR-EMU Updated', className: 'ampr-updating' };
+          return { label: 'APR-EMU обновлен', className: 'ampr-updating' };
         }
         if (phase === 'rebuilding') {
-          return { label: 'Rebuilding APR-EMU', className: 'ampr-updating' };
+          return { label: 'Пересборка APR-EMU', className: 'ampr-updating' };
         }
         if (phase === 'patching') {
-          return { label: 'Updating APR-EMU', className: 'ampr-updating' };
+          return { label: 'Обновление APR-EMU', className: 'ampr-updating' };
         }
-        return { label: 'Updating APR-EMU', className: 'ampr-updating' };
+        return { label: 'Обновление APR-EMU', className: 'ampr-updating' };
       }
       if (action === 'read-speed-test') {
-        return { label: 'Testing Read Speed', className: 'reading' };
+        return { label: 'Проверка скорости чтения', className: 'reading' };
       }
       if (action === 'set-read-only') {
         if (phase === 'complete') {
-          return { label: 'Done', className: 'finalizing' };
+          return { label: 'Готово', className: 'finalizing' };
         }
-        return { label: 'Updating ShadowMount', className: 'mounting' };
+        return { label: 'Обновление ShadowMount', className: 'mounting' };
       }
       if (phase === 'mounting' ||
         current.indexOf('requesting shadowmount') !== -1 ||
         current.indexOf('waiting for shadowmount') !== -1 ||
         current.indexOf('waiting for remount') !== -1 ||
         current.indexOf('remount') !== -1) {
-        return { label: 'Mounting', className: 'mounting' };
+        return { label: 'Монтирование', className: 'mounting' };
       }
       if (current.indexOf('publishing') !== -1) {
-        return { label: 'Publishing', className: 'moving' };
+        return { label: 'Публикация', className: 'moving' };
       }
       if (phase === 'preflight' ||
         current.indexOf('opening existing') !== -1 ||
         current.indexOf('building nested') !== -1) {
-        return { label: 'Inspecting', className: 'finalizing' };
+        return { label: 'Проверка', className: 'finalizing' };
       }
       if (phase === 'metadata' || current.indexOf('finalizing') !== -1) {
-        return { label: 'Finalizing', className: 'finalizing' };
+        return { label: 'Завершение', className: 'finalizing' };
       }
       if (phase === 'restoring' || current.indexOf('restoring original') !== -1) {
-        return { label: 'Restoring', className: 'unpacking' };
+        return { label: 'Восстановление', className: 'unpacking' };
       }
       if (action === 'move-to-usb' || action === 'move-to-internal') {
-        return { label: 'Transferring', className: 'moving' };
+        return { label: 'Перенос', className: 'moving' };
       }
       if (action === 'copy-to-usb' || action === 'copy-to-internal') {
-        return { label: 'Copying', className: 'moving' };
+        return { label: 'Копирование', className: 'moving' };
       }
       if (action === 'extract-image') {
-        return { label: 'Extracting', className: 'moving' };
+        return { label: 'Извлечение', className: 'moving' };
       }
       if (phase === 'copying') {
-        return { label: 'Repacking', className: 'repacking' };
+        return { label: 'Перепаковка', className: 'repacking' };
       }
       if (action === 'make-image') {
-        return { label: 'Making Image', className: 'moving' };
+        return { label: 'Создание образа', className: 'moving' };
       }
       if (action === 'uncompress') {
-        return { label: 'Unpacking', className: 'unpacking' };
+        return { label: 'Распаковка', className: 'unpacking' };
       }
       if ((action === 'compress' || validationAction) && mountedValidationScan) {
-        return { label: 'Validating', className: 'validating' };
+        return { label: 'Проверка', className: 'validating' };
       }
       if (validationAction &&
         repairBlocks <= 0 &&
         (phase === 'repairing' || opPhase === 'repairing' ||
           current.indexOf('repairing') !== -1)) {
-        return { label: 'Validating', className: 'validating' };
+        return { label: 'Проверка', className: 'validating' };
       }
       if (phase === 'repairing' ||
         opPhase === 'repairing' ||
         current.indexOf('repairing') !== -1 ||
         current.indexOf('rebuilding repaired') !== -1) {
-        return { label: 'Repacking', className: 'repacking' };
+        return { label: 'Перепаковка', className: 'repacking' };
       }
       if (validationAction ||
         phase === 'opening' ||
         phase === 'finding-mounted-image' ||
         current.indexOf('validat') !== -1 ||
         current.indexOf('checking shadowmount') !== -1) {
-        return { label: 'Validating', className: 'validating' };
+        return { label: 'Проверка', className: 'validating' };
       }
       if (phase === 'scanning' ||
         current.indexOf('scanning app folder') !== -1 ||
         current.indexOf('scheduling budgeted stream') !== -1 ||
         current.indexOf('scanning nested') !== -1) {
-        return { label: 'Scanning', className: 'scanning' };
+        return { label: 'Сканирование', className: 'scanning' };
       }
       if (action === 'compress') {
-        return { label: 'Compressing', className: 'compressing' };
+        return { label: 'Сжатие', className: 'compressing' };
+
+
+
       }
-      return { label: 'Running', className: 'run' };
-    }
+      return { label: 'Выполнение', className: 'run' };
+}
 
     function progressUnits(job) {
       job = job || activeJob() || {};
@@ -4080,7 +4119,8 @@
 	        return {
 	          done: Math.max(0, Math.min(total, copied)),
 	          total,
-          countable: true
+        
+	          countable: true
         };
       }
       const count = Number(job.phaseCount || 0);
@@ -4094,6 +4134,7 @@
         phase === 'rebuilding' ||
         phase === 'restoring' ||
         phase === 'read-test')) {
+       
         return {
           done: Math.max(0, Math.min(count, step)),
           total: count,
@@ -4101,11 +4142,11 @@
         };
       }
       return { done: 0, total: 0, countable: false };
-    }
+}
 
     function progressIsCountable(job) {
       return progressUnits(job).countable;
-    }
+}
 
     function visualShowsPercent(visual, progress) {
       return !!(progress && progress.countable) &&
@@ -4113,13 +4154,13 @@
         visual.className !== 'closing' &&
         visual.className !== 'mounting' &&
         visual.className !== 'finalizing';
-    }
+}
 
     function visualShowsThroughput(visual, progress) {
       return !!(progress && progress.countable && progress.hasSpeed) &&
         !!visual &&
         visual.className !== 'closing';
-    }
+}
 
     function statusChip(g) {
       if (g.activeOp) {
@@ -4133,29 +4174,29 @@
           '</span>';
       }
       if (g.amprUpdateNeeded === true) {
-        return '<span class="chip ampr">APR update</span>';
+        return '<span class="chip ampr">обновление APR</span>';
       }
       if (g.sourceKind === 'compressed') {
-        if (g.validation === 'validated') return '<span class="chip ok">validated</span>';
-        if (g.validation === 'changed') return '<span class="chip warn">changed</span>';
-        return '<span class="chip bad">not validated</span>';
+        if (g.validation === 'validated') return '<span class="chip ok">проверено</span>';
+        if (g.validation === 'changed') return '<span class="chip warn">изменено</span>';
+        return '<span class="chip bad">не проверено</span>';
       }
-      if (g.sourceKind === 'folder') return '<span class="chip">folder</span>';
-      if (g.sourceKind === 'image') return '<span class="chip">image</span>';
-      return '<span class="chip bad">unavailable</span>';
-    }
+      if (g.sourceKind === 'folder') return '<span class="chip">папка</span>';
+      if (g.sourceKind === 'image') return '<span class="chip">образ</span>';
+      return '<span class="chip bad">недоступно</span>';
+}
 
     function mountStateChip(g) {
       if (!g || g.isMounted !== false) return '';
       const status = String(g.mountStatus || '').toLowerCase();
-      const label = status === 'working' ? 'working' : 'not mounted';
+      const label = status === 'working' ? 'выполнение' : 'не смонтировано';
       return '<span class="chip bad">' + escapeHtml(label) + '</span>';
-    }
+}
 
     function detailMountStateChip(g) {
       if (!g || g.isMounted !== false) return '';
       return mountStateChip(g);
-    }
+}
 
     function detailStatusChip(g) {
       if (!g) return '';
@@ -4164,7 +4205,7 @@
         return statusChip(g);
       }
       return '';
-    }
+}
 
 	    function storageChip(g) {
 	      const storage = storageLabelForGame(g);
@@ -4173,11 +4214,11 @@
 	    }
 
 	    function aprIndexedChip(item) {
-	      return item && item.aprIndexed ? '<span class="chip ok">APR Indexed</span>' : '';
+	      return item && item.aprIndexed ? '<span class="chip ok">Индекс APR создан</span>' : '';
 	    }
 
 	    function amprUpdateChip(g) {
-	      return g && g.amprUpdateNeeded === true ? '<span class="chip ampr">APR update needed</span>' : '';
+	      return g && g.amprUpdateNeeded === true ? '<span class="chip ampr">требуется обновление APR</span>' : '';
 	    }
 
 	    function amprCurrentVersion(g) {
@@ -4187,8 +4228,8 @@
 
 	    function amprVersionDisplay(version) {
 	      const text = String(version || '').trim();
-	      if (text === 'original') return 'APR original';
-	      if (text.indexOf('custom-') === 0) return 'APR custom';
+	      if (text === 'original') return 'APR оригинальная';
+	      if (text.indexOf('custom-') === 0) return 'APR пользовательская';
 	      return text ? 'APR v' + text : '';
 	    }
 
@@ -4247,7 +4288,7 @@
 	    }
 
 	    function aprIndexedChipForGame(g) {
-	      return gameAprIndexedFromLastState(g) ? '<span class="chip ok">APR Indexed</span>' : '';
+	      return gameAprIndexedFromLastState(g) ? '<span class="chip ok">Индекс APR создан</span>' : '';
 	    }
 
 	    function instanceRoleChip(g) {
@@ -4260,7 +4301,7 @@
 	    function locationCountChip(g) {
 	      const count = titleInstanceCount(g);
 	      if (count <= 1) return '';
-	      return '<span class="chip">' + escapeHtml(smallLabel(count + ' locations')) + '</span>';
+	      return '<span class="chip">' + escapeHtml(smallLabel(count + ' локации')) + '</span>';
 	    }
 
 	    function rowTagLabel(tag) {
@@ -4280,8 +4321,8 @@
 	      if (role) tags.push(role);
 	      const amprVersion = amprCurrentVersion(g);
 	      if (amprVersion) tags.push(amprVersionDisplay(amprVersion));
-	      if (g && g.amprUpdateNeeded === true) tags.push('APR update');
-	      if (count > 1) tags.push(count + ' locations');
+	      if (g && g.amprUpdateNeeded === true) tags.push('обновление APR');
+	      if (count > 1) tags.push(count + ' локации');
 	      if (!tags.length) return '';
 	      return '<div class="row-tags">' + tags.map((tag) => (
 	        '<span class="' + rowTagClass(tag) + '">' + escapeHtml(rowTagLabel(tag)) + '</span>'
@@ -4304,7 +4345,7 @@
       return action === 'compress' &&
         status !== 'cancelled' &&
         (Number(op.compressedSize || 0) > 0 || Number(op.savedBytes || 0) > 0);
-    }
+}
 
 	    function normalizedPath(path) {
 	      return String(path || '').replace(/\/+$/, '');
@@ -4318,8 +4359,8 @@
 
 	    function storageInfoForName(name) {
 	      const value = String(name || '').toLowerCase();
-	      if (value === 'internal') return { kind: 'internal', label: 'Internal SSD', root: '/data' };
-	      if (value === 'external') return { kind: 'external', label: 'External SSD', root: '/mnt/ext0' };
+	      if (value === 'internal') return { kind: 'internal', label: 'Внутренний SSD', root: '/data' };
+	      if (value === 'external') return { kind: 'external', label: 'Внешний SSD', root: '/mnt/ext0' };
 	      if (value === 'm2') return { kind: 'm2', label: 'M.2 SSD', root: '/mnt/ext1' };
 	      if (value === 'usb') return { kind: 'usb', label: 'USB', root: '/mnt/usb' };
 	      return value ? { kind: value, label: value, root: '' } : { kind: '', label: '', root: '' };
@@ -4328,14 +4369,14 @@
 	    function storageInfoForPath(path) {
 	      const value = normalizedPath(path);
 	      if (!value) return { kind: '', label: '', root: '' };
-	      if (pathUnderRoot(value, '/data')) return { kind: 'internal', label: 'Internal SSD', root: '/data' };
-	      if (pathUnderRoot(value, '/mnt/ext0')) return { kind: 'external', label: 'External SSD', root: '/mnt/ext0' };
+	      if (pathUnderRoot(value, '/data')) return { kind: 'internal', label: 'Внутренний SSD', root: '/data' };
+	      if (pathUnderRoot(value, '/mnt/ext0')) return { kind: 'external', label: 'Внешний SSD', root: '/mnt/ext0' };
 	      if (pathUnderRoot(value, '/mnt/ext1')) return { kind: 'm2', label: 'M.2 SSD', root: '/mnt/ext1' };
 	      for (let i = 0; i <= 7; i++) {
 	        const root = '/mnt/usb' + i;
 	        if (pathUnderRoot(value, root)) return { kind: 'usb' + i, label: 'USB ' + i, root };
 	      }
-	      return { kind: 'other', label: 'Other storage', root: '' };
+	      return { kind: 'other', label: 'Другое хранилище', root: '' };
 	    }
 
 	    function storageLabelForGame(g) {
@@ -4358,19 +4399,18 @@
 	        storageLabelWithPath((op && op.targetRoot) || '') ||
 	        operationSourceLabel(op);
 	    }
-
-	    function operationDirectionText(op) {
+		function operationDirectionText(op) {
 	      if (!op) return '';
 	      const action = String(op.action || '').toLowerCase();
 	      if (!operationChangesGameState(op)) return '';
 	      const source = operationSourceLabel(op);
 	      const target = operationTargetLabel(op);
-      if (!target || source === target) {
-        if (action === 'compress') return source + ' compressed in place';
-        if (action === 'make-image') return source + ' made into image';
-        if (action === 'uncompress') return source + ' unpacked in place';
-	        if (action === 'extract-image') return source + ' extracted to folder';
-	        if (action === 'update-ampr') return source + ' APR-EMU updated';
+	      if (!target || source === target) {
+        if (action === 'compress') return source + ' сжатие';
+        if (action === 'make-image') return source + ' преобразование в образ';
+        if (action === 'uncompress') return source + ' распаковка';
+        if (action === 'extract-image') return source + ' извлечение в папку';
+        if (action === 'update-ampr') return source + ' APR-EMU обновление';
 	        return source;
 	      }
 	      return source + ' -> ' + target;
@@ -4414,7 +4454,7 @@
 	        jobPhase: String((state.job && state.job.phase) || '').toLowerCase(),
 	        current: String((state.job && state.job.current) || '').toLowerCase()
 	      };
-	    }
+	}
 
 	    function operationOutputFollowStarted(op) {
 	      const phase = activeOperationPhase(op);
@@ -4504,16 +4544,22 @@
 	      return null;
 	    }
 
-	    function gameInstanceRole(g) {
-	      if (!g) return '';
-	      const op = latestStateChangingOperationForTitle(g.titleId);
-	      if (!op) return '';
-	      const status = String((op && op.status) || '').toLowerCase();
-	      const currentOutput = status === 'running' && operationOutputFollowStarted(op);
-	      if (gameIsOperationOutput(g, op)) return currentOutput ? 'current output' : '';
-	      if (gameIsOperationSource(g, op)) return 'original source';
-	      return '';
-	    }
+function gameInstanceRole(g) {
+    if (!g) return '';
+    const op = latestStateChangingOperationForTitle(g.titleId);
+    if (!op) return '';
+
+    const status = String((op && op.status) || '').toLowerCase();
+    const currentOutput = status === 'running' && operationOutputFollowStarted(op);
+
+    if (gameIsOperationOutput(g, op))
+        return currentOutput ? 'результат' : '';
+
+    if (gameIsOperationSource(g, op))
+        return 'исходник';
+
+    return '';
+}
 
 	    function runningOperationForOutputPresentation() {
 	      if (!Array.isArray(state.history)) return null;
@@ -4548,7 +4594,7 @@
         Number((op && op.startedAt) || 0),
         Number((op && op.createdAt) || 0)
       );
-    }
+}
 
     function bytesNearlyEqual(a, b) {
       const left = Math.max(0, Number(a || 0));
@@ -4556,9 +4602,18 @@
       if (left <= 0 || right <= 0) return false;
       const tolerance = Math.max(8 * 1024 * 1024, Math.max(left, right) * 0.005);
       return Math.abs(left - right) <= tolerance;
-    }
+}
 
-    function operationChangesGameState(op) {
+
+
+
+
+
+
+
+
+
+   function operationChangesGameState(op) {
       const action = String((op && op.action) || '').toLowerCase();
       return action === 'compress' ||
         action === 'make-image' ||
@@ -4569,7 +4624,7 @@
         action === 'move-to-internal' ||
         action === 'copy-to-usb' ||
         action === 'copy-to-internal';
-    }
+}
 
     function latestStateChangeTimeForGame(g) {
       const titleId = String((g && g.titleId) || '');
@@ -4632,7 +4687,7 @@
         if (op.status !== 'success' &&
           !(includeMountFailure && opLooksLikeMountFailure(op))) continue;
         return op;
-      }
+     }
       return null;
     }
 
@@ -4656,7 +4711,7 @@
       if (compressedSize <= 0 && sourceSize > savedBytes) {
         compressedSize = sourceSize - savedBytes;
       }
-      if (savedBytes <= 0 && sourceSize > compressedSize) {
+     if (savedBytes <= 0 && sourceSize > compressedSize) {
         savedBytes = sourceSize - compressedSize;
       }
       return { compressedSize, sourceSize, savedBytes };
@@ -4690,7 +4745,7 @@
       if (!g) return null;
       const gameCompressedSize = Number(g.compressedSize || 0);
       const gameSourceSize = Number(g.compressionSourceSize || 0);
-      const gameSaved = Number(g.savedBytes || 0);
+     const gameSaved = Number(g.savedBytes || 0);
       const gameStats = {
         compressedSize: gameCompressedSize,
         sourceSize: gameSourceSize,
@@ -4700,7 +4755,7 @@
       if (gameCompressedSize > 0 && compressionStatsMatchCurrentFile(g, gameStats)) {
         return gameStats;
       }
-      const op = latestCompressionOperationForGame(g);
+     const op = latestCompressionOperationForGame(g);
       return op ? Object.assign(compressionOpStats(op), {
         key: String(op.id || '') + ':' + String(op.endedAt || op.createdAt || '')
       }) : null;
@@ -4710,7 +4765,7 @@
 	      const stats = compressionStatsForGame(g);
 	      const saved = Number((stats && stats.savedBytes) || 0);
 	      if (!g || saved <= 0) return '';
-	      return '<span class="chip metric ok">saved ' + escapeHtml(shortSize(saved)) + '</span>';
+	      return '<span class="chip metric ok">сэкономлено ' + escapeHtml(shortSize(saved)) + '</span>';
 	    }
 
 	    function exactFolderScanSize(g) {
@@ -4728,35 +4783,39 @@
         const status = sizeStatus(g);
         const exactScanSize = exactFolderScanSize(g);
         if (exactScanSize > 0) {
-          return '<span class="chip metric size-estimate" title="Measured folder size">' +
+          return '<span class="chip metric size-estimate" title="Измеренный размер папки">' +
             escapeHtml(cardSize(exactScanSize)) + '</span>';
         }
         const size = Number(g.sourceSize || 0);
         if (size > 0) {
           const title = status === 'refreshing'
-            ? 'Estimated folder size, checking for updates'
+            ?
+            'Оценочный размер папки, проверка обновлений'
             : status === 'cached'
-              ? 'Cached estimated folder size for display only'
-              : 'Folder size';
+              ?
+              'Кэшированный оценочный размер папки только для отображения'
+              : 'Размер папки';
           const label = (status === 'done' ? '' : '~') + cardSize(size);
           const dots = status === 'refreshing'
-            ? '<span class="measure-dots" data-measure-dots aria-hidden="true">...</span>'
+            ?
+            '<span class="measure-dots" data-measure-dots aria-hidden="true">...</span>'
             : '';
           return '<span class="chip metric size-estimate" title="' + escapeHtml(title) + '">' +
             escapeHtml(label) + dots + '</span>';
         }
         if (status === 'queued') {
-          return '<span class="chip size-pending">size queued</span>';
+          return '<span class="chip size-pending">размер в очереди</span>';
         }
-        if (status === 'scanning' || status === 'refreshing') {
-          return '<span class="chip size-pending">scanning size' +
+       if (status === 'scanning' || status === 'refreshing') {
+          return '<span class="chip size-pending">сканирование размера' +
             '<span class="measure-dots" data-measure-dots aria-hidden="true">...</span></span>';
-        }
+       }
         return '';
       }
       const stats = compressionStatsForGame(g);
       const size = stats && Number(stats.compressedSize || 0) > 0
-        ? Number(stats.compressedSize || 0)
+        ?
+        Number(stats.compressedSize || 0)
         : Number(g && g.sourceSize || 0);
       if (size <= 0) return '';
       return '<span class="chip metric size-estimate">' + cardSize(size) + '</span>';
@@ -4772,10 +4831,10 @@
       }
       return null;
     }
-
-    function latestFailedOperationForGame(g) {
+														
+function latestFailedOperationForGame(g) {
       const titleId = String((g && g.titleId) || '');
-      if (!titleId || !Array.isArray(state.history)) return null;
+     if (!titleId || !Array.isArray(state.history)) return null;
       for (const op of state.history) {
         if (!operationIsCurrentForGame(g, op)) continue;
         if (String((op && op.status) || '').toLowerCase() === 'failed') return op;
@@ -4786,21 +4845,21 @@
 
     function failureNoticeTitle(op) {
       const action = String((op && op.action) || 'operation').toLowerCase();
-      if (action === 'compress') return 'Compress failed';
-      if (action === 'make-image') return 'Make image failed';
-      if (action === 'uncompress') return 'Unpack failed';
-      if (action === 'extract-image') return 'Extract failed';
-      if (action === 'validate-repair' || action === 'validate-only') return 'Validate failed';
-      if (action === 'refresh-mount') return 'Mount failed';
-      if (action === 'set-read-only') return 'Set read-only failed';
-      if (action === 'build-ampr-index') return 'APR index failed';
-      if (action === 'update-ampr') return 'APR-EMU update failed';
-      if (action === 'read-speed-test') return 'Read speed failed';
-      return 'Operation failed';
+      if (action === 'compress') return 'Сжатие не удалось';
+      if (action === 'make-image') return 'Создание образа не удалось';
+      if (action === 'uncompress') return 'Распаковка не удалась';
+      if (action === 'extract-image') return 'Извлечение не удалось';
+      if (action === 'validate-repair' || action === 'validate-only') return 'Проверка не удалась';
+      if (action === 'refresh-mount') return 'Монтирование не удалось';
+      if (action === 'set-read-only') return 'Установка только для чтения не удалась';
+      if (action === 'build-ampr-index') return 'Индекс APR не удался';
+      if (action === 'update-ampr') return 'Обновление APR-EMU не удалось';
+      if (action === 'read-speed-test') return 'Проверка скорости чтения не удалась';
+      return 'Операция не удалась';
     }
 
     function failureNoticeText(op) {
-      return formatByteText((op && op.error) || historyResultLabel(op, null) || 'Failed');
+      return formatByteText((op && op.error) || historyResultLabel(op, null) || 'Не удалось');
     }
 
     function showFailureNotice(op) {
@@ -4888,7 +4947,8 @@
 
     function liveBadBlocksForOperation(op, job) {
       const storedBlocks = op && op.badBlocksFound !== undefined && op.badBlocksFound !== null
-        ? op.badBlocksFound
+        ?
+        op.badBlocksFound
         : 0;
       const persistedBlocks = Math.max(0, Number(storedBlocks || 0));
       const liveBlocks = Math.max(0, Number((job && (job.badBlocksFound || job.repairBlocks)) || 0));
@@ -4902,7 +4962,7 @@
       const current = String((job && job.current) || '').toLowerCase();
       if (phase === 'mounting') return false;
       if (action === 'validate-repair' || action === 'validate-only') return true;
-      return phase === 'validating' ||
+     return phase === 'validating' ||
         phase === 'repairing' ||
         phase === 'finding-mounted-image' ||
         current.indexOf('validat') !== -1 ||
@@ -4917,12 +4977,12 @@
     }
 
     function badBlocksChipHtml(blocks, dir) {
-      const label = blocks + ' bad block' + (blocks === 1 ? '' : 's') + ' found';
+      const label = 'Найдено поврежденных блоков: ' + blocks;
       if (blocks <= 0) {
         return '<span class="chip metric ok">' + escapeHtml(label) + '</span>';
       }
       if (dir) {
-        return '<button class="chip metric warn" type="button" title="Open bad block log" data-bad-blocks-dir="' +
+        return '<button class="chip metric warn" type="button" title="Открыть лог поврежденных блоков" data-bad-blocks-dir="' +
           escapeHtml(dir) + '">' + escapeHtml(label) + '</button>';
       }
       return '<span class="chip metric warn">' + escapeHtml(label) + '</span>';
@@ -4949,7 +5009,8 @@
       const op = latestRepairOperationForGame(g, true);
       if (!op) return null;
       const storedBlocks = op.repairedBlocks !== undefined && op.repairedBlocks !== null
-        ? op.repairedBlocks
+        ?
+        op.repairedBlocks
         : op.badBlocksFound;
       const blocks = Math.max(0, Number(storedBlocks || 0));
       return Number.isFinite(blocks) ? blocks : null;
@@ -4969,14 +5030,15 @@
       }
       const blocks = completedRepairBlocksForGame(g);
       if (blocks === null || blocks <= 0) return '';
-      return '<span class="chip metric ok">' + blocks + ' block' +
-        (blocks === 1 ? '' : 's') + ' repaired</span>';
+      return '<span class="chip metric ok">Восстановлено блоков: ' + blocks + '</span>';
+													   
     }
 
     function repairResultKeyForGame(g) {
       const bad = completedBadBlocksForGame(g);
       const repaired = completedRepairBlocksForGame(g);
-      const mountFailed = latestMountFailureForGame(g) ? 'mount-failed' : '';
+      const mountFailed = latestMountFailureForGame(g) ?
+        'mount-failed' : '';
       const badOp = completedBadBlocksOperationForGame(g);
       return [bad, repaired, mountFailed, badOp && badOp.repairSummary].map(keyPart).join('|');
     }
@@ -4993,7 +5055,8 @@
 
     function repairBlocksForOperation(op, job) {
       const storedBlocks = op && op.repairedBlocks !== undefined && op.repairedBlocks !== null
-        ? op.repairedBlocks
+        ?
+        op.repairedBlocks
         : 0;
       const persistedBlocks = Math.max(0, Number(storedBlocks || 0));
       if (persistedBlocks > 0) return persistedBlocks;
@@ -5005,7 +5068,7 @@
     function repairedBlocksText(op, job) {
       const blocks = repairBlocksForOperation(op, job);
       if (blocks <= 0) return '';
-      return blocks + ' block' + (blocks === 1 ? '' : 's') + ' repaired';
+      return 'Восстановлено блоков: ' + blocks;
     }
 
     function readSpeedAverageText(op) {
@@ -5019,41 +5082,42 @@
     }
 
     function historyResultLabel(op, job) {
-      const result = (op.phase && op.phase !== 'complete') ? op.phase :
+      const result = (op.phase && op.phase !== 'complete') ?
+        op.phase :
         (op.result || op.status);
       const action = String((op && op.action) || '').toLowerCase();
       const error = String((op && op.error) || '').toLowerCase();
       if (action === 'compress' && error.indexOf('output already exists') !== -1) {
-        return 'output already exists';
+        return 'выходной файл уже существует';
       }
       if (action === 'validate-only') {
-        if (result === 'bad-blocks-found-not-mounted') return "bad blocks found, didn't mount";
-        if (result === 'verified-not-mounted') return "no bad blocks found, didn't mount";
-        if (result === 'bad-blocks-found') return 'bad blocks found';
-        if (result === 'clean') return 'no bad blocks found';
+        if (result === 'bad-blocks-found-not-mounted') return "найдены поврежденные блоки, монтирование не выполнено";
+        if (result === 'verified-not-mounted') return "поврежденные блоки не найдены, монтирование не выполнено";
+        if (result === 'bad-blocks-found') return 'найдены поврежденные блоки';
+        if (result === 'clean') return 'поврежденные блоки не найдены';
       }
       if (action === 'uncompress' && result === 'not-mounted') {
-        return "unpacked, didn't mount";
+        return "распаковано, монтирование не выполнено";
       }
       if (action === 'refresh-mount') {
-        if (result === 'success') return 'mounted';
-        if (result === 'not-mounted') return 'not mounted';
+        if (result === 'success') return 'смонтировано';
+        if (result === 'not-mounted') return 'не смонтировано';
       }
-      if (action === 'set-read-only') {
-        if (result === 'already-read-only') return 'already read-only';
-        if (result === 'read-only') return 'set read-only';
+     if (action === 'set-read-only') {
+        if (result === 'already-read-only') return 'уже только для чтения';
+        if (result === 'read-only') return 'установлено только для чтения';
       }
       if (action === 'read-speed-test') {
         const average = readSpeedAverageText(op);
-        if (average) return 'avg ' + average;
-        if (result === 'tested') return 'tested read speed';
+        if (average) return 'средн. ' + average;
+        if (result === 'tested') return 'скорость чтения проверена';
       }
       if (action === 'update-ampr' && result === 'updated') {
-        return 'APR-EMU updated';
+        return 'APR-EMU обновлен';
       }
-      if (opLooksLikeMountFailure(op)) return "verified, didn't mount";
+      if (opLooksLikeMountFailure(op)) return "проверено, монтирование не выполнено";
       const repairText = repairedBlocksText(op, job);
-      if (!repairText) return result;
+     if (!repairText) return result;
       return op.status === 'failed' && result ?
         result + ' - ' + repairText :
         repairText;
@@ -5085,7 +5149,7 @@
     async function retryCompressSkippingSpaceCheck(id) {
       const op = operationById(id);
       if (!operationCanRetrySkipSpaceCheck(op)) return;
-      const ok = confirm('Could not check free storage for this target.\n\nYou can continue, but compression may fail if storage is actually low. The original will be kept until the new file is complete and verified.');
+      const ok = confirm('Не удалось проверить свободное место на этом накопителе.\n\nВы можете продолжить, но сжатие может завершиться ошибкой, если места действительно мало. Оригинал будет сохранен до тех пор, пока новый файл не будет полностью готов и проверен.');
       if (!ok) return;
       let url = '/api/gc/compress?titleId=' + encodeURIComponent(op.titleId || '') +
         '&sourcePath=' + encodeURIComponent(op.sourcePath || '') +
@@ -5098,7 +5162,7 @@
       } else if (targetRoot) {
         const usbId = await storageTargetIdForRoot(targetRoot);
         if (!usbId) {
-          alert('Could not find the original target storage for this retry.');
+          alert('Не удалось найти исходный целевой накопитель для этой повторной попытки.');
           return;
         }
         url += '&destination=usb&usbId=' + encodeURIComponent(usbId);
@@ -5120,7 +5184,8 @@
       if (!g || !g.hasIcon) return '';
       const version = iconVersion(g);
       const suffix = version ? '&v=' + encodeURIComponent(version) : '';
-      const sizePart = size ? '&size=' + encodeURIComponent(size) : '';
+      const sizePart = size ?
+        '&size=' + encodeURIComponent(size) : '';
       return '/api/gc/icon?titleId=' + encodeURIComponent(g.titleId) + sizePart + suffix;
     }
 
@@ -5176,8 +5241,9 @@
     }
 
     function heroIconClass(g) {
-      const key = iconPath(g) || ('title:' + ((g && g.titleId) || ''));
-      if (!state.animatedIconKeys[key]) {
+      const key = iconPath(g) ||
+        ('title:' + ((g && g.titleId) || ''));
+     if (!state.animatedIconKeys[key]) {
         state.animatedIconKeys[key] = true;
         return ' is-new-icon';
       }
@@ -5199,26 +5265,26 @@
     function opKey(op) {
       if (!op) return '';
       return [
-	        op.id, op.titleId, op.displayName, op.action, op.status, op.phase,
-	        op.result, op.error, op.sourcePath, op.outputPath, op.sourceKind,
-	        op.targetRoot, op.deletePolicy, op.skipSpaceCheck,
+            op.id, op.titleId, op.displayName, op.action, op.status, op.phase,
+            op.result, op.error, op.sourcePath, op.outputPath, op.sourceKind,
+            op.targetRoot, op.deletePolicy, op.skipSpaceCheck,
         op.repairSummary,
-	        op.createdAt, op.startedAt, op.endedAt,
-	        op.compressionSourceSize, op.compressedSize, op.savedBytes,
-	        op.scanBytes, op.scanFiles, op.scanDirs, op.scanEntries,
-	        op.scanElapsedMs, op.scanWorkers,
-	        op.repairedBlocks, op.badBlocksFound,
+            op.createdAt, op.startedAt, op.endedAt,
+            op.compressionSourceSize, op.compressedSize, op.savedBytes,
+            op.scanBytes, op.scanFiles, op.scanDirs, op.scanEntries,
+            op.scanElapsedMs, op.scanWorkers,
+            op.repairedBlocks, op.badBlocksFound,
         op.hashCheckedBlocks, op.softwareComparedBlocks
-      ].map(keyPart).join('|');
+        ].map(keyPart).join('|');
     }
 
     function gameKey(g) {
       return [
         gameInstanceId(g),
-	        g.titleId, g.name, g.sourceKind, g.sourcePath, g.outputPath,
-	        g.storage, g.isMounted, g.mountStatus,
-	        storageLabelForGame(g), gameInstanceRole(g), titleInstanceCount(g),
-	        g.validation, g.primaryAction, g.sourceSize, g.freeBytes,
+            g.titleId, g.name, g.sourceKind, g.sourcePath, g.outputPath,
+            g.storage, g.isMounted, g.mountStatus,
+            storageLabelForGame(g), gameInstanceRole(g), titleInstanceCount(g),
+            g.validation, g.primaryAction, g.sourceSize, g.freeBytes,
         g.requiredBytes, g.extraBytes, g.streamMinFreeBytes,
         g.streamExtraBytes, g.savedBytes,
         g.compressionSourceSize, g.compressedSize,
@@ -5239,7 +5305,7 @@
         state.selected,
         state.gamesLoading,
         state.gamesLoaded,
-        state.gamesError,
+       state.gamesError,
         state.games.map(gameKey).join('||')
       ].map(keyPart).join('::');
     }
@@ -5252,14 +5318,14 @@
         const sameStorage = state.games.find((g) => g.storage === storage && hasFree(g));
         if (sameStorage) return sameStorage;
       }
-      return state.games.find(hasFree) || selected || null;
+     return state.games.find(hasFree) || selected || null;
     }
 
     function headerFreeSpaceLabel(g) {
-      if (!g) return 'Free Space';
+      if (!g) return 'Свободное место';
       const fromOutput = storageInfoForPath(g.outputPath);
       const label = fromOutput.label || storageLabelForGame(g);
-      return label ? label + ' Free' : 'Free Space';
+      return label ? label + ' Свободно' : 'Свободное место';
     }
 
     function headerKey() {
@@ -5289,17 +5355,17 @@
         ].map(keyPart).join('|');
       }
       return [
-	        gameKey(g), actionFor(g), actionLabel(g),
-	        compressionResultKeyForGame(g),
-	        gameAprIndexedFromLastState(g),
-	        operationScanSummary((g && g.activeOp) || latestCompressionOperationForGame(g)),
-	        repairResultKeyForGame(g),
+            gameKey(g), actionFor(g), actionLabel(g),
+            compressionResultKeyForGame(g),
+            gameAprIndexedFromLastState(g),
+            operationScanSummary((g && g.activeOp) || latestCompressionOperationForGame(g)),
+            repairResultKeyForGame(g),
         opKey(latestFailedOperationForGame(g)),
         g && g.activeOp && state.job && state.job.activeId === g.activeOp.id
           ? [
             state.job.badBlocksFound,
             state.job.repairedBlocks,
-            state.job.repairBlocks,
+          state.job.repairBlocks,
             state.job.cancelRequested,
             state.job.rollbackRequested,
             state.job.cancelDisabled,
@@ -5347,35 +5413,36 @@
       state.renderKeys.list = key;
       const list = $('game-list');
       if (!state.games.length && state.gamesLoading) {
-        $('count-label').textContent = 'Scanning games';
+        $('count-label').textContent = 'Сканирование игр';
         list.innerHTML = gamesLoadingMarkup(false);
         return;
       }
       if (!state.games.length && state.gamesError) {
-        $('count-label').textContent = 'Scan failed';
+        $('count-label').textContent = 'Сканирование не удалось';
         list.innerHTML = '<div class="empty">' + escapeHtml(state.gamesError) + '</div>';
         return;
       }
       $('count-label').textContent = state.games.length +
-        (state.games.length === 1 ? ' game' : ' games');
+        (state.games.length === 1 ? ' игра' : ' игр');
       if (!state.games.length) {
-        list.innerHTML = '<div class="empty">No games found</div>';
+        list.innerHTML = '<div class="empty">Игры не найдены</div>';
         return;
       }
-	      list.innerHTML = state.games.map((g) => (
-	        '<button class="game-row ' +
-	        (gameInstanceId(g) === state.selected ? 'is-selected ' : '') +
-	        (g.isMounted === false ? 'is-unmounted' : '') +
-	        (gameInstanceRole(g) === 'current output' ? ' is-output' : '') +
-	        '" data-id="' + escapeHtml(gameInstanceId(g)) + '">' +
-	        '<div class="thumb">' + gameIcon(g, false) + '</div>' +
-	        '<div class="row-main"><div class="row-title">' + escapeHtml(g.name || g.titleId) + '</div>' +
-	        '<div class="row-sub"><span>' + escapeHtml(g.titleId) + '</span></div>' +
-	        rowTagsHtml(g) +
-	        '</div>' +
-	        statusChip(g) +
-	        '</button>'
-	      )).join('');
+          list.innerHTML = state.games.map((g) => (
+            '<button class="game-row ' +
+            (gameInstanceId(g) === state.selected ? 'is-selected ' : '') +
+            (g.isMounted === false ? 'is-unmounted' : '') +
+            (gameInstanceRole(g) === 'current output' ? ' is-output' : '') +
+            '" data-id="' + escapeHtml(gameInstanceId(g)) + '">' +
+            '<div class="thumb">' + gameIcon(g, false) + '</div>' +
+            '<div class="row-main"><div class="row-title">' + escapeHtml(g.name || g.titleId) + '</div>' +
+            '<div class="row-sub"><span>' + escapeHtml(g.titleId) + '</span></div>' +
+            rowTagsHtml(g) +
+          
+          '</div>' +
+            statusChip(g) +
+            '</button>'
+          )).join('');
       list.querySelectorAll('.game-row').forEach((row) => {
         row.addEventListener('click', () => {
           selectGame(row.getAttribute('data-id'), true, false);
@@ -5401,10 +5468,9 @@
         '<div class="loading-pill" aria-hidden="true">' +
         '<span class="loading-dots"><span></span><span></span><span></span></span>' +
         '</div>' +
-        '<div><div class="loading-title">Scanning games</div>' +
+        '<div><div class="loading-title">Сканирование игр</div>' +
         '<div class="loading-subtitle">' +
-        (detail ? 'This can take a moment on PS5 storage.' :
-          'Looking for installed and compressed game entries.') +
+        (detail ? 'Это может занять некоторое время на накопителе PS5.' :'Поиск установленных и сжатых игр.') +
         '</div></div>' +
         '</div>';
     }
@@ -5418,6 +5484,28 @@
     function smallLabel(s) {
       return String(s || '').toLowerCase();
     }
+	
+	function statusLabel(status) {
+    switch (String(status || '').toLowerCase()) {
+        case 'success':
+            return 'успешно';
+
+        case 'cancelled':
+            return 'отменено';
+
+        case 'failed':
+            return 'ошибка';
+
+        case 'running':
+            return 'выполняется';
+
+        case 'queued':
+            return 'в очереди';
+
+        default:
+            return smallLabel(status);
+    }
+}
 
     function baseActionFor(g) {
       if (!g) return '';
@@ -5434,62 +5522,64 @@
 
     function actionLabel(g) {
       const action = actionFor(g);
-      if (action === 'update-ampr') return 'Update APR-EMU';
-      if (action === 'validate-repair') return g.primaryAction || 'Validate and Repair';
-      if (action === 'compress') return g.primaryAction || 'Compress';
-      return 'Start';
+      if (action === 'update-ampr') return 'Обновить APR-EMU';
+      if (action === 'validate-repair') return g.primaryAction || 'Проверить и Восстановить';
+      if (action === 'compress') return g.primaryAction || 'СЖАТЬ';
+      return 'Запуск';
     }
 
-	    function pendingOperationLabel(op) {
-	      const action = String((op && op.action) || '').toLowerCase();
-      if (action === 'compress') return 'Pending Compress';
-      if (action === 'make-image') return 'Pending Make Image';
-      if (action === 'validate-repair' || action === 'validate-only') return 'Pending Validate';
-      if (action === 'refresh-mount') return 'Pending Mount';
-      if (action === 'set-read-only') return 'Pending Set Read Only';
-      if (action === 'uncompress') return 'Pending Unpack';
-      if (action === 'extract-image') return 'Pending Extract';
-      if (action === 'move-to-usb') return 'Pending Move to External Storage';
-      if (action === 'move-to-internal') return 'Pending Move to Internal SSD';
-      if (action === 'copy-to-usb') return 'Pending Copy to External Storage';
-      if (action === 'copy-to-internal') return 'Pending Copy to Internal SSD';
-      if (action === 'delete-game-data') return 'Pending Delete';
-      if (action === 'build-ampr-index') return 'Pending APR Index';
-      if (action === 'update-ampr') return 'Pending APR-EMU Update';
-	      if (action === 'read-speed-test') return 'Pending Read Speed Test';
-	      return 'Pending Operation';
-	    }
+        function pendingOperationLabel(op) {
+          const action = String((op && op.action) || '').toLowerCase();
+      if (action === 'compress') return 'Ожидает сжатия';
+      if (action === 'make-image') return 'Ожидает создания образа';
+      if (action === 'validate-repair' || action === 'validate-only') return 'Ожидает проверки';
+      if (action === 'refresh-mount') return 'Ожидает монтирования';
+      if (action === 'set-read-only') return 'Ожидает установки только для чтения';
+      if (action === 'uncompress') return 'Ожидает распаковки';
+      if (action === 'extract-image') return 'Ожидает извлечения';
+      if (action === 'move-to-usb') return 'Ожидает переноса на внешний накопитель';
+      if (action === 'move-to-internal') return 'Ожидает переноса на внутренний SSD';
+      if (action === 'copy-to-usb') return 'Ожидает копирования на внешний накопитель';
+      if (action === 'copy-to-internal') return 'Ожидает копирования на внутренний SSD';
+      if (action === 'delete-game-data') return 'Ожидает удаления';
+      if (action === 'build-ampr-index') return 'Ожидает индекса APR';
+      if (action === 'update-ampr') return 'Ожидает обновления APR-EMU';
+      if (action === 'read-speed-test') return 'Ожидает проверки скорости чтения';
+          return 'Ожидает выполнения операции';
+        }
 
-	    function pendingOperationMeta(op) {
-	      const direction = operationDirectionText(op);
-	      const output = String((op && op.outputPath) || '').trim();
-	      if (direction && output) return direction + ' - ' + output;
-	      if (direction) return direction;
-	      return output;
-	    }
+        function pendingOperationMeta(op) {
+          const direction = operationDirectionText(op);
+          const output = String((op && op.outputPath) || '').trim();
+          if (direction && output) return direction + ' - ' + output;
+          if (direction) return direction;
+          return output;
+        }
 
-	    function operationOutputMeta(op) {
-	      const output = String((op && op.outputPath) || '').trim();
-	      if (!output) return '';
-	      return 'output: ' + output;
-	    }
+        function operationOutputMeta(op) {
+          const output = String((op && op.outputPath) || '').trim();
+          if (!output) return '';
+          return 'выходной файл: ' + output;
+        }
 
-	    function operationSavedMeta(op) {
-	      if (!opCanShowCompressionStats(op)) return '';
-	      const stats = compressionOpStats(op);
-	      const saved = Number((stats && stats.savedBytes) || 0);
-	      return saved > 0 ? 'saved ' + shortSize(saved) : '';
-	    }
+        function operationSavedMeta(op) {
+          if (!opCanShowCompressionStats(op)) return '';
+          const stats = compressionOpStats(op);
+          const saved = Number((stats && stats.savedBytes) || 0);
+          return saved > 0 ?
+            'сэкономлено ' + shortSize(saved) : '';
+        }
 
-    function progressPercent(job) {
+   function progressPercent(job) {
       const units = progressUnits(job);
       if (!units.countable || units.total <= 0) return 0;
       return Math.max(0, Math.min(100, units.done / units.total * 100));
     }
 
-    function progressFillPercent(progress, visual) {
+   function progressFillPercent(progress, visual) {
       if (visual && visual.className === 'restoring') {
-        return progress && progress.countable ? progress.percent : 100;
+        return progress && progress.countable ?
+          progress.percent : 100;
       }
       if (!visual ||
         visual.className === 'closing' ||
@@ -5508,120 +5598,126 @@
       const secs = value - minutes * 60;
       const two = (n) => String(n).padStart(2, '0');
       return hours > 0
-        ? hours + ':' + two(minutes) + ':' + two(secs)
+        ?
+        hours + ':' + two(minutes) + ':' + two(secs)
         : minutes + ':' + two(secs);
     }
 
-	    function progressTiming(job) {
-	      job = job || activeJob() || {};
-	      const elapsed = Math.max(0, Number(job.elapsedSeconds || 0));
-	      const phaseElapsed = Math.max(0, Number(job.phaseElapsedSeconds || 0));
-      const units = progressUnits(job);
-      const percent = progressPercent(job);
-      const fraction = units.countable && units.total > 0 ? units.done / units.total : 0;
-      const etaElapsed = validationJobUsesPhaseEta(job) ? phaseElapsed : elapsed;
+        function progressTiming(job) {
+          job = job || activeJob() || {};
+          const elapsed = Math.max(0, Number(job.elapsedSeconds || 0));
+          const phaseElapsed = Math.max(0, Number(job.phaseElapsedSeconds || 0));
+     const units = progressUnits(job);
+          const percent = progressPercent(job);
+     const fraction = units.countable && units.total > 0 ? units.done / units.total : 0;
+          const etaElapsed = validationJobUsesPhaseEta(job) ? phaseElapsed : elapsed;
       const remaining = fraction >= 1
-        ? 0
+        ?
+        0
         : fraction > 0.001 && etaElapsed > 0
-          ? Math.max(0, etaElapsed * (1 - fraction) / fraction)
+          ?
+          Math.max(0, etaElapsed * (1 - fraction) / fraction)
           : null;
       const reportedSpeed = reportedSpeedBytesPerSecond(job);
       const sampledSpeed = String(state.speed.activeId || '') === String(job.activeId || '')
-        ? Number(state.speed.bytesPerSecond || 0)
+        ?
+        Number(state.speed.bytesPerSecond || 0)
         : 0;
       const instantSpeed = units.countable
-        ? (sampledSpeed > 0 ? sampledSpeed : reportedSpeed)
+        ?
+        (sampledSpeed > 0 ? sampledSpeed : reportedSpeed)
         : reportedSpeed;
       return {
         percent,
         countable: units.countable,
         hasSpeed: instantSpeed > 0,
         elapsedText: formatDuration(elapsed),
-        remainingText: remaining === null ? '--' : formatDuration(remaining),
-	        speedText: speedText(instantSpeed)
-	      };
-	    }
+        remainingText: remaining === null ?
+          '--' : formatDuration(remaining),
+                speedText: speedText(instantSpeed)
+              };
+        }
 
-	    function progressCurrentParts(op, job) {
-	      return {
-	        direction: operationDirectionText(op),
-	        current: ''
-	      };
-	    }
+        function progressCurrentParts(op, job) {
+          return {
+            direction: operationDirectionText(op),
+            current: ''
+          };
+        }
 
-	    function progressCurrentHtml(op, job) {
-	      const parts = progressCurrentParts(op, job);
-	      if (!parts.direction && !parts.current) return '';
-	      return '<div class="progress-current">' +
-	        (parts.direction
-	          ? '<div class="progress-direction">' + escapeHtml(parts.direction) + '</div>'
-	          : '') +
-	        (parts.current
-	          ? '<div class="progress-current-file">' + escapeHtml(parts.current) + '</div>'
-	          : '') +
-	        '</div>';
-	    }
+        function progressCurrentHtml(op, job) {
+          const parts = progressCurrentParts(op, job);
+          if (!parts.direction && !parts.current) return '';
+          return '<div class="progress-current">' +
+                (parts.direction
+                  ? '<div class="progress-direction">' + escapeHtml(parts.direction) + '</div>'
+                  : '') +
+                (parts.current
+                  ? '<div class="progress-current-file">' + escapeHtml(parts.current) + '</div>'
+                  : '') +
+                '</div>';
+        }
 
-	    function renderProgressCurrentLine(el, op, job) {
-	      if (!el) return;
-	      const parts = progressCurrentParts(op, job);
-	      el.innerHTML =
-	        (parts.direction
-	          ? '<div class="progress-direction">' + escapeHtml(parts.direction) + '</div>'
-	          : '') +
-	        (parts.current
-	          ? '<div class="progress-current-file">' + escapeHtml(parts.current) + '</div>'
-	          : '');
-	    }
+        function renderProgressCurrentLine(el, op, job) {
+          if (!el) return;
+          const parts = progressCurrentParts(op, job);
+          el.innerHTML =
+                (parts.direction
+                  ? '<div class="progress-direction">' + escapeHtml(parts.direction) + '</div>'
+                  : '') +
+                (parts.current
+                  ? '<div class="progress-current-file">' + escapeHtml(parts.current) + '</div>'
+                  : '');
+        }
 
-	    function scanProgressInfo(job, op, g) {
-	      const scanned = Math.max(0, Number((job && job.scanBytes) || (op && op.scanBytes) || 0));
-	      if (scanned <= 0) return { countable: false, percent: 0, scanned, total: 0 };
-	      const candidates = [
-	        Number(job && job.totalBytes || 0),
-	        Number(op && op.compressionSourceSize || 0),
-	        Number(g && g.sourceSize || 0),
-	        Number(g && g.requiredBytes || 0)
-	      ];
-	      let total = 0;
-	      for (const candidate of candidates) {
-	        const value = Math.max(0, Number(candidate || 0));
-	        if (value > 0 && value >= scanned * 0.98) {
-	          total = value;
-	          break;
-	        }
-	      }
-	      if (total <= 0) return { countable: false, percent: 0, scanned, total: 0 };
-	      return {
-	        countable: true,
-	        percent: Math.max(0, Math.min(100, scanned / total * 100)),
-	        scanned,
-	        total
-	      };
-	    }
+        function scanProgressInfo(job, op, g) {
+          const scanned = Math.max(0, Number((job && job.scanBytes) || (op && op.scanBytes) || 0));
+          if (scanned <= 0) return { countable: false, percent: 0, scanned, total: 0 };
+          const candidates = [
+                Number(job && job.totalBytes || 0),
+                Number(op && op.compressionSourceSize || 0),
+                Number(g && g.sourceSize || 0),
+                Number(g && g.requiredBytes || 0)
+              ];
+          let total = 0;
+          for (const candidate of candidates) {
+            const value = Math.max(0, Number(candidate || 0));
+            if (value > 0 && value >= scanned * 0.98) {
+              total = value;
+              break;
+            }
+          }
+          if (total <= 0) return { countable: false, percent: 0, scanned, total: 0 };
+          return {
+                countable: true,
+                percent: Math.max(0, Math.min(100, scanned / total * 100)),
+                scanned,
+                total
+              };
+        }
 
-	    function mountedValidationProgressInfo(job) {
-	      const count = Number((job && job.phaseCount) || 0);
-	      const step = Number((job && job.phaseStep) || 0);
-	      if (count <= 0) return { countable: false, percent: 0, scanned: 0, total: 0 };
-	      return {
-	        countable: true,
-	        percent: Math.max(0, Math.min(100, step / count * 100)),
-	        scanned: Math.max(0, Math.min(count, step)),
-	        total: count
-	      };
-	    }
+        function mountedValidationProgressInfo(job) {
+          const count = Number((job && job.phaseCount) || 0);
+          const step = Number((job && job.phaseStep) || 0);
+          if (count <= 0) return { countable: false, percent: 0, scanned: 0, total: 0 };
+          return {
+                countable: true,
+                percent: Math.max(0, Math.min(100, step / count * 100)),
+                scanned: Math.max(0, Math.min(count, step)),
+                total: count
+              };
+        }
 
-	    function operationProgressInfoForVisual(visual, job, op, g) {
-	      const current = String((job && job.current) || '').toLowerCase();
-	      if (current.indexOf('scanning mounted') !== -1) {
-	        return mountedValidationProgressInfo(job);
-	      }
-	      if (visual && visual.className === 'scanning') {
-	        return scanProgressInfo(job, op, g);
-	      }
-	      return null;
-	    }
+        function operationProgressInfoForVisual(visual, job, op, g) {
+          const current = String((job && job.current) || '').toLowerCase();
+          if (current.indexOf('scanning mounted') !== -1) {
+            return mountedValidationProgressInfo(job);
+          }
+          if (visual && visual.className === 'scanning') {
+            return scanProgressInfo(job, op, g);
+          }
+          return null;
+        }
 
     function validationJobUsesPhaseEta(job) {
       const action = String((job && job.verb) || '').toLowerCase();
@@ -5638,38 +5734,42 @@
           phase === 'metadata');
     }
 
-	    function operationProgressTiming(job, visual, op, g) {
-	      const progress = progressTiming(job);
-	      const phaseProgress = operationProgressInfoForVisual(visual, job, op, g);
-	      if (!phaseProgress || !phaseProgress.countable || phaseProgress.total <= 0) {
-	        return progress;
-	      }
-	      const elapsed = validationJobUsesPhaseEta(job)
-	        ? Math.max(0, Number((job && job.phaseElapsedSeconds) || 0))
-	        : Math.max(0, Number((job && job.elapsedSeconds) || 0));
-	      const fraction = Math.max(0, Math.min(1, phaseProgress.scanned / phaseProgress.total));
-	      const remaining = fraction >= 1
-	        ? 0
-	        : fraction > 0.001 && elapsed > 0
-	          ? Math.max(0, elapsed * (1 - fraction) / fraction)
-	          : null;
-	      return {
-	        ...progress,
-	        percent: phaseProgress.percent,
-	        countable: true,
-	        remainingText: remaining === null ? '--' : formatDuration(remaining)
-	      };
-	    }
+        function operationProgressTiming(job, visual, op, g) {
+          const progress = progressTiming(job);
+          const phaseProgress = operationProgressInfoForVisual(visual, job, op, g);
+          if (!phaseProgress || !phaseProgress.countable || phaseProgress.total <= 0) {
+            return progress;
+          }
+          const elapsed = validationJobUsesPhaseEta(job)
+            ?
+            Math.max(0, Number((job && job.phaseElapsedSeconds) || 0))
+            : Math.max(0, Number((job && job.elapsedSeconds) || 0));
+          const fraction = Math.max(0, Math.min(1, phaseProgress.scanned / phaseProgress.total));
+          const remaining = fraction >= 1
+            ?
+            0
+            : fraction > 0.001 && elapsed > 0
+              ?
+              Math.max(0, elapsed * (1 - fraction) / fraction)
+              : null;
+          return {
+            ...progress,
+            percent: phaseProgress.percent,
+            countable: true,
+            remainingText: remaining === null ?
+              '--' : formatDuration(remaining)
+          };
+        }
 
-	    function operationScanSummary(op) {
-	      const scanned = Math.max(0, Number((op && op.scanBytes) || 0));
-	      if (!op || scanned <= 0) return '';
-	      const scan = scanProgressInfo(null, op, null);
-	      if (scan.countable) {
-	        return 'scan: ' + scan.percent.toFixed(0) + '%';
-	      }
-	      return 'scan: ' + shortSize(scanned);
-	    }
+        function operationScanSummary(op) {
+          const scanned = Math.max(0, Number((op && op.scanBytes) || 0));
+          if (!op || scanned <= 0) return '';
+          const scan = scanProgressInfo(null, op, null);
+          if (scan.countable) {
+            return 'scan: ' + scan.percent.toFixed(0) + '%';
+          }
+          return 'scan: ' + shortSize(scanned);
+        }
 
     function speedMetricBytes(job) {
       job = job || {};
@@ -5763,45 +5863,45 @@
       if (!g || !g.sourcePath || g.activeOp || g.pendingOp || g.sourceKind === 'unknown') return [];
       const actions = [];
       const sourceKind = String(g.sourceKind || '').toLowerCase();
-      const canBuildAmprIndex = g.amprPresent === true;
-      const primaryAction = actionFor(g);
+     const canBuildAmprIndex = g.amprPresent === true;
+     const primaryAction = actionFor(g);
       const normalAction = baseActionFor(g);
       if (primaryAction === 'update-ampr' && normalAction) {
         actions.push({ id: normalAction, label: actionLabel({ ...g, amprUpdateNeeded: false }) });
       }
       if (g.amprPresent === true) {
-        actions.push({ id: 'choose-ampr-version', label: 'Choose APR-EMU Version' });
+        actions.push({ id: 'choose-ampr-version', label: 'Выбрать версию APR-EMU' });
       }
       if (amprCanRestoreOriginal(g)) {
-        actions.push({ id: 'restore-ampr-original', label: 'Restore Original APR-EMU' });
+        actions.push({ id: 'restore-ampr-original', label: 'Восстановить оригинальный APR-EMU' });
       }
       if (sourceKind === 'folder') {
-        actions.push({ id: 'make-image', label: 'Make Image' });
+        actions.push({ id: 'make-image', label: 'Создать образ' });
         if (canBuildAmprIndex) {
-          actions.push({ id: 'build-ampr-index', label: 'Build AMPR Index' });
+          actions.push({ id: 'build-ampr-index', label: 'Создать индекс AMPR' });
         }
       }
       if (sourceKind === 'compressed' || actionFor(g) === 'validate-repair') {
-        actions.push({ id: 'validate-only', label: 'Validate Only' });
+        actions.push({ id: 'validate-only', label: 'Только проверить' });
         if (canBuildAmprIndex) {
-          actions.push({ id: 'build-ampr-index', label: 'Build AMPR Index' });
+          actions.push({ id: 'build-ampr-index', label: 'Создать индекс AMPR' });
         }
-        actions.push({ id: 'uncompress', label: 'Uncompress' });
+        actions.push({ id: 'uncompress', label: 'Распаковать' });
       }
       if (sourceKind === 'image') {
-        actions.push({ id: 'set-read-only', label: 'Set Read Only' });
+        actions.push({ id: 'set-read-only', label: 'Установить только для чтения' });
         if (canBuildAmprIndex) {
-          actions.push({ id: 'build-ampr-index', label: 'Build AMPR Index' });
+          actions.push({ id: 'build-ampr-index', label: 'Создать индекс AMPR' });
         }
         if (g.isMounted === true) {
-          actions.push({ id: 'extract-image', label: 'Extract to Folder' });
+          actions.push({ id: 'extract-image', label: 'Извлечь в папку' });
         }
       }
       if (g.canMoveToUsb || g.canMoveToInternal) {
-        actions.push({ id: 'copy-to', label: 'Copy to...' });
-        actions.push({ id: 'move-to', label: 'Move to...' });
+        actions.push({ id: 'copy-to', label: 'Копировать в...' });
+        actions.push({ id: 'move-to', label: 'Перенести в...' });
       }
-      actions.push({ id: 'delete-game-data', label: 'Delete Game Data', danger: true });
+      actions.push({ id: 'delete-game-data', label: 'Удалить данные игры', danger: true });
       return actions;
     }
 
@@ -5823,8 +5923,8 @@
       const actions = secondaryActions(g);
       layer.innerHTML = secondaryMenuMarkup(g, actions);
     }
-
-    function renderPrimary(g) {
+    
+function renderPrimary(g) {
       if (!g) return '';
       if (g.activeOp) {
         const job = jobForOperation(g.activeOp);
@@ -5836,7 +5936,7 @@
         const cancelDisabledReason = String((job && job.cancelDisabledReason) || '');
 	        const visual = operationVisual(g.activeOp, job);
 	        const progress = operationProgressTiming(job, visual, g.activeOp, g);
-	        const scanProgress = operationProgressInfoForVisual(visual, job, g.activeOp, g);
+        const scanProgress = operationProgressInfoForVisual(visual, job, g.activeOp, g);
         const displayPercent = scanProgress && scanProgress.countable
           ? scanProgress.percent
           : visualShowsPercent(visual, progress)
@@ -5846,18 +5946,21 @@
           ? (scanProgress.countable ? scanProgress.percent : 0)
           : progressFillPercent(progress, visual);
         const cancelAttrs = cancelDisabled
-          ? ' disabled title="' + escapeHtml(cancelDisabledReason || 'Operation cannot be cancelled now') + '"'
+          ? ' disabled title="' + escapeHtml(cancelDisabledReason || 'Операция не может быть отменена сейчас') + '"'
           : destructiveStreamLocked
-            ? ' disabled title="Unsafe compression cannot be cancelled after it starts"'
+            ? ' disabled title="Небезопасное сжатие невозможно отменить после его начала"'
           : jobCanceling(job)
-            ? ' disabled title="Cancel already requested"'
-            : ' title="Cancel operation"';
-	        const percentText = displayPercent !== null
-	          ? '<span class="progress-percent">' + displayPercent.toFixed(0) + '%</span>'
+            ?
+            ' disabled title="Отмена уже запрошена"'
+            : ' title="Отменить операцию"';
+        const percentText = displayPercent !== null
+	          ?
+	          '<span class="progress-percent">' + displayPercent.toFixed(0) + '%</span>'
 	          : '';
-	        const currentHtml = progressCurrentHtml(g.activeOp, job);
+        const currentHtml = progressCurrentHtml(g.activeOp, job);
 	        const throughputHtml = visualShowsThroughput(visual, progress)
-	          ? '<span class="progress-time progress-speed">' +
+	          ?
+	          '<span class="progress-time progress-speed">' +
 	          '<span class="progress-speed-value">' + progress.speedText + '</span></span>' +
           (progress.countable
             ? '<span class="progress-time progress-remaining">ETA: ' +
@@ -5872,14 +5975,16 @@
 	          '</div>' +
 	          currentHtml +
 	          '<div class="bar"><span class="progress-fill" style="width:' + fillPercent.toFixed(1) + '%"></span></div>' +
+ 
           '<div class="progress-times">' +
           '<span class="progress-time progress-elapsed">' + icon('timer') +
           '<span class="progress-elapsed-value">' + progress.elapsedText + '</span></span>' +
           throughputHtml +
           '</div>' +
           '</div>' +
-          '<button class="more-btn" id="cancel-active" aria-label="Cancel operation"' + cancelAttrs + '>' + icon('close') + '</button>' +
-          '</div>';
+          '<button class="more-btn" id="cancel-active" aria-label="Отменить операцию"' + cancelAttrs + '>' + icon('close') + '</button>' +
+  
+         '</div>';
       }
 	      if (g.pendingOp) {
 	        const meta = pendingOperationMeta(g.pendingOp);
@@ -5887,10 +5992,10 @@
 	          escapeHtml(pendingOperationLabel(g.pendingOp)) +
 	          (meta ? '<div class="pending-meta">' + escapeHtml(meta) + '</div>' : '') +
 	          '</div>' +
-	          '<button class="small-action" id="cancel-pending">Cancel</button></div>';
-      }
+	          '<button class="small-action" id="cancel-pending">Отмена</button></div>';
+	      }
       const action = actionFor(g);
-      if (!action) return '<button class="primary-btn" disabled>Unavailable</button>';
+      if (!action) return '<button class="primary-btn" disabled>Недоступно</button>';
       const primaryClass = action === 'update-ampr' ? 'primary-btn is-ampr' : 'primary-btn';
       const primary = '<button class="' + primaryClass + '" id="primary-action">' + escapeHtml(actionLabel(g)) + '</button>';
       const actions = secondaryActions(g);
@@ -5898,11 +6003,11 @@
       const expanded = state.secondaryMenuFor === gameInstanceId(g) ? 'true' : 'false';
       return '<div class="action-row">' +
         primary +
-        '<button class="more-btn" id="more-actions" aria-label="More actions" aria-haspopup="menu" aria-expanded="' + expanded + '">' +
+        '<button class="more-btn" id="more-actions" aria-label="Дополнительные действия" aria-haspopup="menu" aria-expanded="' + expanded + '">' +
         '<span class="more-dots" aria-hidden="true"><span></span><span></span><span></span></span>' +
         '</button>' +
         '</div>';
-    }
+}
 
     function wirePrimaryControls(g) {
       const btn = $('primary-action');
@@ -5968,7 +6073,7 @@
         top = Math.max(padding, viewportHeight - padding - menuRect.height);
       }
       top = Math.max(padding, Math.min(top, viewportHeight - padding - Math.min(menuRect.height, maxHeight)));
-
+															
       menu.style.left = left + 'px';
       menu.style.top = top + 'px';
       menu.style.visibility = 'visible';
@@ -5990,7 +6095,7 @@
         startPollBurst(10000);
         await refreshAll();
       } catch (err) {
-        alert(formatByteText(err.message || 'Could not mount selected instance'));
+        alert(formatByteText(err.message || 'Не удалось смонтировать выбранный экземпляр'));
       } finally {
         if (btn) btn.disabled = false;
       }
@@ -6007,7 +6112,7 @@
         startPollBurst(70000);
         await refreshAll();
       } catch (err) {
-        alert(formatByteText(err.message || 'Could not start read speed test'));
+        alert(formatByteText(err.message || 'Не удалось запустить тест скорости чтения'));
       } finally {
         if (btn) btn.disabled = false;
       }
@@ -6125,7 +6230,7 @@
             return;
           } catch (clipboardErr) { }
         }
-        alert('Could not copy path');
+        alert('Не удалось скопировать путь');
       }
     }
 
@@ -6144,7 +6249,7 @@
           detail.innerHTML = '<div class="empty">' + escapeHtml(state.gamesError) + '</div>';
           return;
         }
-        detail.innerHTML = '<div class="empty">No games found</div>';
+        detail.innerHTML = '<div class="empty">Игры не найдены</div>';
         return;
       }
       const sourceKind = String(g.sourceKind || '').toLowerCase();
@@ -6153,12 +6258,14 @@
       const showReadTest = g.isMounted === true &&
         !!g.sourcePath && !g.activeOp && !g.pendingOp && sourceKind !== 'unknown';
       const remountButton = showRemount
-        ? '<button class="remount-path" id="remount-path" aria-label="Mount now" title="Mount now"' +
-        '>' + icon('refresh') + '<span>Mount now</span></button>'
+        ?
+        '<button class="remount-path" id="remount-path" aria-label="Смонтировать сейчас" title="Смонтировать сейчас"' +
+        '>' + icon('refresh') + '<span>Смонтировать сейчас</span></button>'
         : '';
       const readSpeedButton = showReadTest
-        ? '<button class="remount-path" id="read-speed-test" aria-label="Test read speed" title="Test read speed">' +
-        icon('timer') + '<span>Read speed</span></button>'
+        ?
+        '<button class="remount-path" id="read-speed-test" aria-label="Проверить скорость чтения" title="Проверить скорость чтения">' +
+        icon('timer') + '<span>Скорость чтения</span></button>'
         : '';
       const hasPathAction = showRemount || showReadTest;
       detail.innerHTML =
@@ -6168,7 +6275,8 @@
         '<div class="facts">' +
 	        '<span class="chip">' + escapeHtml(g.titleId) + '</span>' +
 	        storageChip(g) +
-	        '<span class="chip">' + escapeHtml(g.sourceKind) + '</span>' +
+	        '<span class="chip">' + escapeHtml(sourceKindLabel(g.sourceKind)) + '</span>' +
+	 
 	        instanceRoleChip(g) +
 	        locationCountChip(g) +
 	        detailMountStateChip(g) +
@@ -6180,21 +6288,23 @@
 	        savedChip(g) +
 	        badBlocksChip(g) +
         repairedBlocksChip(g) +
-        '</div>' +
+  
+       '</div>' +
         '<div class="primary-area">' + renderPrimary(g) + '</div>' +
         '<div class="path-box">' +
         '<div class="path-row' + (hasPathAction ? ' has-remount' : '') + '">' +
-        '<div class="path-line" title="' + escapeHtml(g.sourcePath || '-') + '">' + escapeHtml(g.sourcePath || '-') + '</div>' +
+        '<div class="path-line" title="' + escapeHtml(g.sourcePath ||
+        '-') + '">' + escapeHtml(g.sourcePath || '-') + '</div>' +
         remountButton +
         readSpeedButton +
-        '<button class="copy-path" id="copy-path" aria-label="Copy path">' + icon('copy') + '</button>' +
+        '<button class="copy-path" id="copy-path" aria-label="Копировать путь">' + icon('copy') + '</button>' +
         '</div>' +
         '</div>' +
         '</div>';
       wirePrimaryControls(g);
       const copyPath = $('copy-path');
       if (copyPath) {
-        copyPath.addEventListener('click', () => copyCurrentPath(g.sourcePath || ''));
+         copyPath.addEventListener('click', () => copyCurrentPath(g.sourcePath || ''));
       }
       const remountPath = $('remount-path');
       if (remountPath) {
@@ -6205,15 +6315,28 @@
         readSpeedTest.addEventListener('click', () => startReadSpeedTest(g));
       }
     }
+	
+	function sourceKindLabel(kind) {
+    switch (kind) {
+        case 'compressed':
+            return 'сжато';
+        case 'folder':
+            return 'папка';
+        case 'image':
+            return 'образ';
+        default:
+            return kind;
+    }
+}
 
     function renderHistory(force) {
       const key = historyKey();
-      if (!force && state.renderKeys.history === key) return;
+       if (!force && state.renderKeys.history === key) return;
       state.renderKeys.history = key;
       const body = $('history-body');
       const rows = currentHistoryRows();
       if (!rows.length) {
-        body.innerHTML = '<div class="empty">No operations</div>';
+        body.innerHTML = '<div class="empty">Нет операций</div>';
         return;
       }
 	      body.innerHTML = rows.map((op) => {
@@ -6223,14 +6346,15 @@
 	              op.status === 'pending' ? 'warn' : '';
 	        const repairText = repairedBlocksText(op, jobForOperation(op));
 	        const result = formatByteText(historyResultLabel(op, jobForOperation(op)));
-	        const chips =
-	          '<div class="history-chips"><span class="chip ' + chipClass + '">' +
-	          escapeHtml(smallLabel(op.status)) + '</span>' +
-	          aprIndexedChip(op) +
-	          '</div>';
+			const chips =
+				'<div class="history-chips"><span class="chip ' + chipClass + '">' +
+				escapeHtml(statusLabel(op.status)) + '</span>' +
+				aprIndexedChip(op) +
+				'</div>';
 	        const repairMeta = repairText && result !== repairText ?
 	          '<div class="history-meta">' + escapeHtml(repairText) + '</div>' : '';
-	        const metaRows = [
+	   
+	      const metaRows = [
 	          operationDirectionText(op),
 	          operationOutputMeta(op),
 	          operationSavedMeta(op),
@@ -6239,17 +6363,19 @@
 	          '<div class="history-meta">' + escapeHtml(text) + '</div>'
 	        )).join('');
         const retryAction = operationCanRetrySkipSpaceCheck(op)
-          ? '<div class="history-meta"><button class="small-action" type="button" data-skip-space-retry="' +
-            escapeHtml(op.id || '') + '">Continue anyway</button></div>'
+          ?
+          '<div class="history-meta"><button class="small-action" type="button" data-skip-space-retry="' +
+            escapeHtml(op.id || '') + '">Продолжить в любом случае</button></div>'
           : '';
-	        return '<div class="history-row">' +
+        return '<div class="history-row">' +
 	          '<div><div class="history-title">' + escapeHtml(op.displayName || op.titleId) + '</div>' +
 	          '<div class="history-meta">' + escapeHtml(op.action) + ' - ' + escapeHtml(result) + '</div>' +
 	          metaRows +
 	          repairMeta +
 	          (op.error ? '<div class="history-meta danger-text">' + escapeHtml(formatByteText(op.error)) + '</div>' : '') +
           retryAction +
-	          '</div>' + chips + '</div>';
+	     
+	      '</div>' + chips + '</div>';
 	      }).join('');
     }
 
@@ -6265,7 +6391,8 @@
         label.innerHTML = escapeHtml(headerFreeSpaceLabel(freeGame)) +
           ' <span>' + escapeHtml(Number.isFinite(freeBytes) ? shortSize(freeBytes) : '--') + '</span>';
         label.title = freeGame && freeGame.outputPath
-          ? headerFreeSpaceLabel(freeGame) + ' for ' + freeGame.outputPath
+          ?
+          headerFreeSpaceLabel(freeGame) + ' for ' + freeGame.outputPath
           : headerFreeSpaceLabel(freeGame);
       }
     }
@@ -6329,7 +6456,7 @@
     function updateProgressOnly() {
       const box = document.querySelector('.progress-box');
       if (!box) return;
-	      const label = box.querySelector('.progress-label');
+      const label = box.querySelector('.progress-label');
 	      let percent = box.querySelector('.progress-percent');
 	      let currentLine = box.querySelector('.progress-current');
 	      const scanLine = box.querySelector('.progress-scan');
@@ -6347,19 +6474,22 @@
         return;
       }
 	      const visual = g && g.activeOp
-	        ? operationVisual(g.activeOp, job)
-	        : { label: 'Running', className: 'run' };
+	        ?
+	        operationVisual(g.activeOp, job)
+	        : { label: 'Выполняется', className: 'run' };
 	      const progress = operationProgressTiming(job, visual, g && g.activeOp, g);
 	      const scanProgress = operationProgressInfoForVisual(visual, job, g && g.activeOp, g);
 	      const displayPercent = scanProgress && scanProgress.countable
-	        ? scanProgress.percent
+	        ?
+	        scanProgress.percent
 	        : visualShowsPercent(visual, progress)
-	          ? progress.percent
+	          ?
+	          progress.percent
 	          : null;
 	      box.classList.remove('is-compressing', 'is-closing', 'is-mounting', 'is-validating', 'is-scanning', 'is-repacking',
 	        'is-ampr-updating',
 	        'is-moving', 'is-reading', 'is-deleting', 'is-finalizing', 'is-unpacking', 'is-restoring', 'is-run');
-      box.classList.add('is-' + visual.className);
+	      box.classList.add('is-' + visual.className);
       if (label) {
         label.textContent = visual.label;
       }
@@ -6374,7 +6504,7 @@
           percent.textContent = displayPercent.toFixed(0) + '%';
         } else {
           percent.remove();
-	          percent = null;
+          percent = null;
 	        }
 	      }
 	      const heading = box.querySelector('.progress-heading');
@@ -6409,10 +6539,12 @@
         return;
       }
       if (speedRow) {
-        speedRow.style.display = showThroughput ? '' : 'none';
+        speedRow.style.display = showThroughput ?
+          '' : 'none';
       }
       if (remainingRow) {
-        remainingRow.style.display = showThroughput && progress.countable ? '' : 'none';
+        remainingRow.style.display = showThroughput && progress.countable ?
+          '' : 'none';
       }
       if (speed && showThroughput) {
         speed.textContent = progress.speedText;
@@ -6484,7 +6616,7 @@
         state.gamesError = '';
         renderList(true);
         renderDetail(true);
-      }
+	      }
       try {
         const [games, history, job] = await Promise.all([
           api('/api/gc/games'),
@@ -6507,7 +6639,8 @@
 	            queueFinishedOperationReminder(previousActiveId);
 	          }
 	        }
-	        state.games = games.games || [];
+	        state.games = games.games ||
+	          [];
 	        applyOperationOutputPresentation();
 	        state.games = sortGamesForList(state.games);
 	        maybeShowFinishedOperationReminder();
@@ -6531,7 +6664,7 @@
       } catch (err) {
         state.gamesLoading = false;
         state.gamesLoaded = true;
-        state.gamesError = err.message || 'Could not scan games';
+        state.gamesError = err.message || 'Не удалось просканировать игры';
         state.renderKeys.header = '';
         state.renderKeys.list = '';
         state.renderKeys.detail = '';
@@ -6576,7 +6709,8 @@
         renderHistory(false);
         updateProgressOnly();
       } catch (err) {
-        /* Keep the last rendered UI during transient polling errors. */
+        /* Keep the last rendered UI during transient polling errors.
+        */
       } finally {
         refreshJobInFlight = false;
       }
@@ -6599,9 +6733,9 @@
 
     function moveTargetInternalRowHtml() {
       return '<button class="usb-row" data-target="internal">' +
-        '<div><div class="history-title">Internal SSD</div>' +
+        '<div><div class="history-title">Внутренний SSD</div>' +
         '<div class="history-meta">/data/homebrew</div></div>' +
-        '<span class="chip">Select</span>' +
+        '<span class="chip">Выбрать</span>' +
         '</button>';
     }
 
@@ -6609,9 +6743,9 @@
       return '<button class="usb-row" data-target="usb" data-id="' + escapeHtml(usb.id) + '">' +
         '<div><div class="history-title">' + escapeHtml(usbTargetLabel(usb)) + '</div>' +
         '<div class="history-meta">' + escapeHtml(usb.targetRoot || usb.path) + '</div>' +
-        '<div class="history-meta">' + shortSize(usb.freeBytes) + ' free of ' +
+        '<div class="history-meta">' + shortSize(usb.freeBytes) + ' свободно из ' +
         shortSize(usb.totalBytes) + '</div></div>' +
-        '<span class="chip">Select</span>' +
+        '<span class="chip">Выбрать</span>' +
         '</button>';
     }
 
@@ -6620,7 +6754,8 @@
       const copyMode = state.moveMode === 'copy';
       const g = state.moveGame;
       const usbTargets = g
-        ? state.usb.filter((usb) => !pathUnderRoot(g.sourcePath, usb.path))
+        ?
+        state.usb.filter((usb) => !pathUnderRoot(g.sourcePath, usb.path))
         : state.usb;
       const rows = [];
       if (g && g.canMoveToInternal) {
@@ -6628,7 +6763,7 @@
       }
       usbTargets.forEach((usb) => rows.push(moveTargetUsbRowHtml(usb)));
       if (!rows.length) {
-        body.innerHTML = '<div class="empty">No available storage target</div>';
+        body.innerHTML = '<div class="empty">Нет доступного целевого накопителя</div>';
         return;
       }
       body.innerHTML = rows.join('');
@@ -6640,6 +6775,7 @@
             if (target === 'internal') {
               startCopyToInternal(state.moveGame);
             } else {
+    
               startCopyToUsb(state.moveGame, row.getAttribute('data-id'));
             }
           } else {
@@ -6647,6 +6783,7 @@
               startMoveToInternal(state.moveGame);
             } else {
               startMoveToUsb(state.moveGame, row.getAttribute('data-id'));
+      
             }
           }
         });
@@ -6654,7 +6791,8 @@
     }
 
 	    function selectedCompressUsb() {
-	      return (state.usb || []).find((usb) => usb.id === state.compressUsbId) || null;
+	      return (state.usb || []).find((usb) => usb.id === state.compressUsbId) ||
+	        null;
 	    }
 
     function sourceUsbTarget(g) {
@@ -6677,7 +6815,8 @@
 	      if (!usb) return '';
 	      const name = String(usb.name || 'USB');
 	      const target = String(usb.targetRoot || usb.path || '');
-	      return target ? name + ' (' + target + ')' : name;
+	      return target ?
+	        name + ' (' + target + ')' : name;
 	    }
 
 	    function usbPickerOptionHtml(usb, attrName, selectedId) {
@@ -6686,21 +6825,23 @@
 	        '" type="button" ' + attrName + '="' + escapeHtml(usb.id) + '">' +
 	        '<div><div class="history-title">' + escapeHtml(usb.name) + '</div>' +
 	        '<div class="history-meta">' + escapeHtml(usb.targetRoot || usb.path) + '</div>' +
-	        '<div class="history-meta">' + shortSize(usb.freeBytes) + ' free of ' +
+	        '<div class="history-meta">' + shortSize(usb.freeBytes) + ' свободно из ' +
 	        shortSize(usb.totalBytes) + '</div></div>' +
-        '<span class="chip' + (selected ? ' selected' : '') + '">' +
-        (selected ? 'Selected' : 'Select') + '</span>' +
+        '<span class="chip' + (selected ? 
+        ' selected' : '') + '">' +
+        (selected ? 'Выбрано' : 'Выбрать') + '</span>' +
         '</button>';
-    }
+	    }
 
     function usbPickerTriggerHtml(usb, expanded, attrName) {
 	      return '<button class="usb-picker-trigger" type="button" ' + attrName +
 	        ' aria-haspopup="listbox" aria-expanded="' + (expanded ? 'true' : 'false') + '">' +
 	        '<div><div class="history-title">' + escapeHtml(usb.name) + '</div>' +
 	        '<div class="history-meta">' + escapeHtml(usb.targetRoot || usb.path) + '</div>' +
-	        '<div class="history-meta">' + shortSize(usb.freeBytes) + ' free of ' +
+	        '<div class="history-meta">' + shortSize(usb.freeBytes) + ' свободно из ' +
 	        shortSize(usb.totalBytes) + '</div></div>' +
-        '<span class="chip">' + (expanded ? 'Close' : 'Change') + '</span>' +
+  
+        '<span class="chip">' + (expanded ? 'Закрыть' : 'Изменить') + '</span>' +
         '</button>';
     }
 
@@ -6710,8 +6851,9 @@
         '<div><div class="history-title">' + escapeHtml(title) + '</div>' +
         '<div class="history-meta">' + escapeHtml(meta) + '</div>' +
         (detail ? '<div class="history-meta">' + escapeHtml(detail) + '</div>' : '') +
+        
         '</div><span class="chip' + (selected ? ' selected' : '') + '">' +
-        (selected ? 'Selected' : 'Select') + '</span></button>';
+        (selected ? 'Выбрано' : 'Выбрать') + '</span></button>';
     }
 
     function renderCompressDestinationChooser() {
@@ -6721,20 +6863,20 @@
       const makeImage = state.compressAction === 'make-image';
       if (!picker || !meta) return;
       if (state.compressUsbLoading) {
-        picker.innerHTML = '<div class="usb-picker-empty">Loading storage targets</div>';
+        picker.innerHTML = '<div class="usb-picker-empty">Загрузка целевых накопителей</div>';
         meta.textContent = '';
         return;
       }
       const targets = alternateCompressUsbTargets(g);
       if (!targets.length) {
-        picker.innerHTML = '<div class="usb-picker-empty">No other USB with 10 MB free</div>';
-        meta.textContent = 'Connect another USB target with at least 10 MB free';
+        picker.innerHTML = '<div class="usb-picker-empty">Нет другого USB с 10 МБ свободного места</div>';
+        meta.textContent = 'Подключите другой целевой USB-накопитель с не менее чем 10 МБ свободного места';
         return;
       }
       const internalSelected = state.compressDestination === 'internal';
       picker.innerHTML =
         compressDestinationChoiceHtml(
-          'Internal SSD',
+          'Внутренний SSD',
           '/data/homebrew',
           '',
           internalSelected,
@@ -6744,7 +6886,7 @@
         targets.map((usb) => compressDestinationChoiceHtml(
           usb.name || 'USB',
           usb.targetRoot || usb.path || '',
-          shortSize(usb.freeBytes) + ' free of ' + shortSize(usb.totalBytes),
+          shortSize(usb.freeBytes) + ' свободно из ' + shortSize(usb.totalBytes),
           state.compressDestination === 'usb' && state.compressUsbId === usb.id,
           'data-compress-usb-choice',
           usb.id || ''
@@ -6767,31 +6909,33 @@
       if (state.compressDestination === 'usb') {
         const usb = selectedCompressUsb();
         meta.textContent = usb
-          ? (makeImage ? 'Image target: ' : 'Compression target: ') + usbTargetLabel(usb)
+          ?
+          (makeImage ? 'Целевой накопитель образа: ' : 'Целевой накопитель сжатия: ') + usbTargetLabel(usb)
           : '';
       } else if (state.compressDestination === 'internal') {
         meta.textContent = makeImage
-          ? 'Image target: Internal SSD'
-          : 'Compression target: Internal SSD';
+          ?
+          'Целевой накопитель образа: Внутренний SSD'
+          : 'Целевой накопитель сжатия: Внутренний SSD';
       } else {
-        meta.textContent = 'Choose Internal SSD or another USB target';
+        meta.textContent = 'Выберите внутренний SSD или другой целевой USB-накопитель';
       }
     }
-
-    function renderCompressUsbSelect() {
+				
+function renderCompressUsbSelect() {
       const picker = $('compress-usb-picker');
       const meta = $('compress-usb-meta');
       if (!picker || !meta) return;
       if (state.compressUsbLoading) {
-        picker.innerHTML = '<div class="usb-picker-empty">Loading external storage</div>';
+        picker.innerHTML = '<div class="usb-picker-empty">Загрузка внешнего накопителя</div>';
         meta.textContent = '';
         return;
       }
       if (!state.usb.length) {
         state.compressUsbId = '';
         state.compressUsbOpen = false;
-        picker.innerHTML = '<div class="usb-picker-empty">No external storage with 10 MB free</div>';
-        meta.textContent = 'Connect external storage with at least 10 MB free';
+        picker.innerHTML = '<div class="usb-picker-empty">Нет внешнего накопителя с 10 МБ свободного места</div>';
+        meta.textContent = 'Подключите внешний накопитель как минимум с 10 МБ свободного места';
         return;
       }
       if (!state.compressUsbId || !selectedCompressUsb()) {
@@ -6821,7 +6965,7 @@
         });
       });
 	      meta.textContent = usb
-	        ? usbTargetLabel(usb) + ' - ' + shortSize(usb.freeBytes) + ' free of ' + shortSize(usb.totalBytes)
+	        ? usbTargetLabel(usb) + ' - свободно ' + shortSize(usb.freeBytes) + ' из ' + shortSize(usb.totalBytes)
 	        : '';
     }
 
@@ -6840,15 +6984,15 @@
       const meta = $('uncompress-usb-meta');
       if (!picker || !meta) return;
       if (state.uncompressUsbLoading) {
-        picker.innerHTML = '<div class="usb-picker-empty">Loading external storage</div>';
+        picker.innerHTML = '<div class="usb-picker-empty">Загрузка внешнего накопителя</div>';
         meta.textContent = '';
         return;
       }
       if (!state.usb.length) {
         state.uncompressUsbId = '';
         state.uncompressUsbOpen = false;
-        picker.innerHTML = '<div class="usb-picker-empty">No external storage with 10 MB free</div>';
-        meta.textContent = 'Connect external storage with at least 10 MB free';
+        picker.innerHTML = '<div class="usb-picker-empty">Нет внешнего накопителя с 10 МБ свободного места</div>';
+        meta.textContent = 'Подключите внешний накопитель как минимум с 10 МБ свободного места';
         return;
       }
       if (!state.uncompressUsbId || !selectedUncompressUsb()) {
@@ -6878,15 +7022,15 @@
         });
       });
 	      meta.textContent = usb
-	        ? usbTargetLabel(usb) + ' - ' + shortSize(usb.freeBytes) + ' free of ' + shortSize(usb.totalBytes)
+	        ? usbTargetLabel(usb) + ' - свободно ' + shortSize(usb.freeBytes) + ' из ' + shortSize(usb.totalBytes)
 	        : '';
     }
 
     function uncompressImageLabel(plan) {
       const type = String((plan && plan.nestedType) || '').toLowerCase();
-      if (type === 'exfat') return 'exFAT image';
-      if (type === 'pfs') return 'PFS image';
-      return 'Image';
+      if (type === 'exfat') return 'Образ exFAT';
+      if (type === 'pfs') return 'Образ PFS';
+      return 'Образ';
     }
 
     function defaultUncompressDeletePolicyForDestination(destination) {
@@ -6918,15 +7062,15 @@
       const movingToUsb = state.uncompressDestination === 'usb';
       $('uncompress-files-name').textContent = plan.filesOutputPath
         ? basenameFromPath(plan.filesOutputPath)
-        : 'App folder';
+        : 'Папка приложения';
       $('uncompress-image-title').textContent = uncompressImageLabel(plan);
       $('uncompress-image-name').textContent = plan.imageOutputPath
         ? basenameFromPath(plan.imageOutputPath)
         : (state.uncompressPlanError ||
-          (state.uncompressPlanLoading ? 'Detecting image type' : 'Image output'));
+          (state.uncompressPlanLoading ? 'Определение типа образа' : 'Вывод образа'));
       $('uncompress-inplace-meta').textContent = state.uncompressDeletePolicy === 'keep'
-        ? 'Write next to the compressed image and keep the compressed source'
-        : 'Write next to the compressed image and remove it after output is ready';
+        ? 'Записать рядом со сжатым образом и сохранить исходный сжатый файл'
+        : 'Записать рядом со сжатым образом и удалить его после готовности вывода';
       $('uncompress-internal-row').classList.toggle('is-hidden', !showInternal);
       $('uncompress-usb-row').classList.toggle('is-hidden', !showUsb);
       $('uncompress-usb-panel').classList.toggle('hidden', !movingToUsb);
@@ -6952,7 +7096,7 @@
         button.classList.toggle('is-selected', selected && !disabled);
         const chip = button.querySelector('.chip');
         if (chip) {
-          chip.textContent = disabled ? 'Unavailable' : (selected ? 'Selected' : 'Select');
+          chip.textContent = disabled ? 'Недоступно' : (selected ? 'Выбрано' : 'Выбрать');
           chip.classList.toggle('selected', selected && !disabled);
           chip.classList.toggle('bad', disabled);
         }
@@ -6977,7 +7121,7 @@
       state.uncompressUsbId = '';
       state.uncompressUsbLoading = true;
       state.uncompressUsbOpen = false;
-      $('uncompress-title').textContent = 'Uncompress ' + (g.name || g.titleId);
+      $('uncompress-title').textContent = 'Распаковка ' + (g.name || g.titleId);
       updateUncompressModalSelection();
       showModal('uncompress-modal');
       Promise.all([
@@ -7025,10 +7169,10 @@
 
     function deleteSourceLabel(g) {
       const kind = String((g && g.sourceKind) || '').toLowerCase();
-      if (kind === 'compressed') return 'compressed image';
-      if (kind === 'image') return 'image file';
-      if (kind === 'folder') return 'game folder';
-      return 'game data';
+      if (kind === 'compressed') return 'сжатый образ';
+      if (kind === 'image') return 'файл образа';
+      if (kind === 'folder') return 'папку игры';
+      return 'данные игры';
     }
 
     function updateDeleteModal() {
@@ -7037,11 +7181,11 @@
       $('delete-cancel').disabled = state.deleteBusy;
       $('delete-close').disabled = state.deleteBusy;
       if (!g) return;
-      $('delete-title').textContent = 'Delete ' + (g.name || g.titleId);
-      $('delete-game-name').textContent = g.name || g.titleId || 'Game data';
+      $('delete-title').textContent = 'Удалить ' + (g.name || g.titleId);
+      $('delete-game-name').textContent = g.name || g.titleId || 'Данные игры';
       $('delete-warning-text').textContent =
-        'This permanently deletes the selected ' + deleteSourceLabel(g) +
-        ' from storage. This cannot be undone.';
+        'Это безвозвратно удалит выбранный объект: ' + deleteSourceLabel(g) +
+        ' из хранилища. Это действие нельзя отменить.';
       $('delete-game-path').textContent = g.sourcePath || '';
     }
 
@@ -7084,9 +7228,9 @@
       state.moveGame = g;
       state.moveMode = mode === 'copy' ? 'copy' : 'move';
       $('usb-title').textContent =
-        (state.moveMode === 'copy' ? 'Copy ' : 'Move ') +
-        (g.name || g.titleId) + ' to...';
-      $('usb-body').innerHTML = '<div class="empty">Loading storage targets</div>';
+        (state.moveMode === 'copy' ? 'Копировать ' : 'Переместить ') +
+        (g.name || g.titleId) + ' в...';
+      $('usb-body').innerHTML = '<div class="empty">Загрузка целевых хранилищ</div>';
       showModal('usb-modal');
       try {
         const data = await api('/api/gc/usb');
@@ -7119,41 +7263,41 @@
 
     function safeSpaceText(g) {
       if (state.compressSourcePolicy === 'keep') {
-        return 'Original remains untouched';
+        return 'Оригинал останется без изменений';
       }
       if (state.compressDestination === 'usb') {
         const usb = selectedCompressUsb();
-        if (usb) return 'Requires target free space; deletes after verification';
-        return 'Requires target free space; deletes after verification';
+        if (usb) return 'Требуется место на целевом диске; удаляется после проверки';
+        return 'Требуется место на целевом диске; удаляется после проверки';
       }
       if (state.compressDestination === 'internal') {
-        return 'Requires SSD free space; deletes after verification';
+        return 'Требуется место на SSD; удаляется после проверки';
       }
       const requiredBytes = Number((g && g.requiredBytes) || 0) ||
         Number((g && g.sourceSize) || 0);
       if (!g || !requiredBytes) {
-        return 'Measuring required free space';
+        return 'Оценка необходимого свободного места';
       }
       const freeBytes = Number(g.freeBytes || 0);
       const extra = Number(g.extraBytes || 0) ||
         (freeBytes > 0 && requiredBytes > freeBytes ? requiredBytes - freeBytes : 0);
       const required = modalSizeText(requiredBytes);
-      return extra > 0
-        ? 'Requires ' + required + ' free; ' + modalSizeText(extra) + ' short'
-        : 'Requires ' + required + ' free; deletes after verification';
+return extra > 0
+    ? 'Требуется ' + required + ' свободного места; не хватает ' + modalSizeText(extra)
+    : 'Требуется ' + required + ' свободного места; после проверки файлы будут удалены';
     }
 
     function destructiveSpaceText(g) {
       if (state.compressDestination === 'usb' ||
         state.compressDestination === 'internal') {
-        return 'Requires same storage';
+        return 'Требуется тот же накопитель';
       }
       const minFree = Number((g && g.streamMinFreeBytes) || 1073741824);
-      if (!g || !g.canStreamDelete) return 'Requires folder source';
+      if (!g || !g.canStreamDelete) return 'Требуется исходная папка';
       const extra = Number(g.streamExtraBytes || 0);
-      const base = 'Requires ' + modalSizeText(minFree) + ' free; deletes while writing';
+      const base = 'Требуется ' + modalSizeText(minFree) + ' свободно; удаляется во время записи';
       return extra > 0
-        ? base + '; ' + modalSizeText(extra) + ' short'
+        ? base + '; не хватает ' + modalSizeText(extra)
         : base;
     }
 
@@ -7199,33 +7343,33 @@
       if (!useDestinationChooser && state.compressDestination !== 'usb') {
         state.compressDestinationChooserOpen = false;
       }
-      $('format-output-section').textContent = 'Output';
+      $('format-output-section').textContent = 'Вывод';
       $('format-output-section').classList.toggle('is-hidden', makeImage);
-      $('format-inner-section').textContent = makeImage ? 'Image Format' : 'Inner Image Format';
+      $('format-inner-section').textContent = makeImage ? 'Формат образа' : 'Внутренний формат образа';
       $('format-compress-output').classList.toggle('is-hidden', makeImage);
       $('format-make-image-hint').classList.toggle('is-hidden', makeImage);
       $('format-safe-space').textContent = safeSpaceText(g);
-      $('format-stream-space').textContent = makeImage ? 'Not available for image creation' : destructiveSpaceText(g);
+      $('format-stream-space').textContent = makeImage ? 'Недоступно для создания образа' : destructiveSpaceText(g);
       $('format-destination-keep-title').textContent = makeImage
-        ? 'Make image in place'
-        : 'Compress in place';
+        ? 'Создать образ на месте'
+        : 'Сжать на месте';
       $('format-destination-keep').textContent = makeImage
-        ? 'Write image next to the current game'
-        : 'Write next to the current game';
+        ? 'Записать образ рядом с текущей игрой'
+        : 'Записать рядом с текущей игрой';
       $('format-destination-internal-title').textContent = useDestinationChooser
-        ? (makeImage ? 'Make image to...' : 'Compress to...')
-        : 'Internal SSD';
+        ? (makeImage ? 'Создать образ в...' : 'Сжать в...')
+        : 'Внутренний SSD';
 	      $('format-destination-internal').textContent = useDestinationChooser
-          ? 'Choose Internal SSD or another USB'
+          ? 'Выберите внутренний SSD или другой USB-накопитель'
           : (makeImage
-	          ? 'Write image to /data/homebrew'
-	          : 'Write compressed file to /data/homebrew');
+	          ? 'Записать образ в /data/homebrew'
+	          : 'Записать сжатый файл в /data/homebrew');
       $('format-destination-usb-title').textContent = makeImage
-        ? 'Make image to external storage'
-        : 'External Storage';
+        ? 'Создать образ на внешнем накопителе'
+        : 'Внешний накопитель';
       $('format-destination-usb').textContent = makeImage
-        ? 'Write image to the USB target below'
-        : 'Write compressed file to the USB target below';
+        ? 'Записать образ на выбранный ниже USB-накопитель'
+        : 'Записать сжатый файл на выбранный ниже USB-накопитель';
       $('compress-usb-panel').classList.toggle('hidden',
         useDestinationChooser
           ? !state.compressDestinationChooserOpen
@@ -7262,7 +7406,7 @@
         button.classList.toggle('is-selected', selected && !disabled);
         const chip = button.querySelector('.chip');
         if (chip) {
-          chip.textContent = disabled ? 'Unavailable' : (selected ? 'Selected' : 'Select');
+          chip.textContent = disabled ? 'Недоступно' : (selected ? 'Выбрано' : 'Выбрать');
           chip.classList.toggle('selected', selected && !disabled);
           chip.classList.toggle('bad', disabled);
         }
@@ -7284,22 +7428,22 @@
       state.compressUsbLoading = false;
       state.compressUsbOpen = false;
       state.compressDestinationChooserOpen = false;
-      $('format-title').textContent = (makeImage ? 'Make Image ' : 'Compress ') + (g.name || g.titleId);
+      $('format-title').textContent = (makeImage ? 'Создать образ ' : 'Сжать ') + (g.name || g.titleId);
       $('format-compress-output-name').textContent =
         (g.titleId || '<TITLE_ID>') + '.ffpfsc';
       $('format-exfat-title').textContent = makeImage
-        ? 'exFAT image'
-        : 'exFAT inside .ffpfsc';
+        ? 'Образ exFAT'
+        : 'exFAT внутри .ffpfsc';
       $('format-exfat-name').textContent = makeImage
         ? (g.titleId || '<TITLE_ID>') + '.exfat'
-        : 'Creates ' + (g.titleId || '<TITLE_ID>') + '.ffpfsc with internal exFAT';
+        : 'Создает ' + (g.titleId || '<TITLE_ID>') + '.ffpfsc с внутренним exFAT';
       $('format-pfs-title').textContent = makeImage
-        ? 'PFS image experimental'
-        : 'PFS inside .ffpfsc experimental';
+        ? 'Образ PFS (экспериментально)'
+        : 'PFS внутри .ffpfsc (экспериментально)';
       $('format-pfs-name').textContent = makeImage
         ? (g.titleId || '<TITLE_ID>') + '.ffpfs'
-        : 'Creates ' + (g.titleId || '<TITLE_ID>') + '.ffpfsc with pfs_image.dat';
-      $('format-start').textContent = makeImage ? 'Make Image' : 'Compress';
+        : 'Создает ' + (g.titleId || '<TITLE_ID>') + '.ffpfsc с pfs_image.dat';
+      $('format-start').textContent = makeImage ? 'Создать образ' : 'Сжать';
       updateCompressModalSelection();
       showModal('format-modal');
       state.compressUsbLoading = true;
@@ -7348,7 +7492,7 @@
       } catch (err) {
         const data = err.data || {};
         if (data.lowSpace) {
-          alert('Not enough free storage.\n\nFree ' + shortSize(data.extraBytes || 0) + ' more on the target storage.');
+          alert('Недостаточно свободного места.\n\nОсвободите еще ' + shortSize(data.extraBytes || 0) + ' на целевом накопителе.');
         } else {
           alert(formatByteText(err.message));
         }
@@ -7431,7 +7575,7 @@
       } catch (err) {
         const data = err.data || {};
         if (data.lowSpace) {
-          alert('Not enough free storage.\n\nFree ' + shortSize(data.extraBytes || 0) + ' more on the target storage.');
+          alert('Недостаточно свободного места.\n\nОсвободите еще ' + shortSize(data.extraBytes || 0) + ' на целевом накопителе.');
         } else {
           alert(formatByteText(err.message));
         }
@@ -7439,7 +7583,8 @@
     }
 
     async function startAction(g, confirmStream, overrideAction, compressFormat, deletePolicy, usbId, compressionDestination) {
-      const action = overrideAction || actionFor(g);
+      const action = overrideAction ||
+        actionFor(g);
       if (!action) return;
       if (!g || !g.sourcePath) return;
       if (action === 'update-ampr') {
@@ -7481,29 +7626,29 @@
         const data = err.data || {};
         if (data.lowSpace) {
           const requested = deletePolicy || data.requestedDeletePolicy || '';
-          const noun = action === 'make-image' ? 'image creation' : 'compression';
+          const noun = action === 'make-image' ? 'создания образа' : 'сжатия';
           if (requested === 'stream') {
             const minFree = modalSizeText(data.streamMinFreeBytes || 1073741824);
             const extra = modalSizeText(data.streamExtraBytes || 0);
-            alert('Not enough free storage for destructive compression.\n\nDestructive deletes the source while writing and cannot be cancelled after it starts. It requires ' + minFree + ' free. Free ' + extra + ' more on the target storage.');
+            alert('Недостаточно свободного места для небезопасного сжатия.\n\nНебезопасное сжатие удаляет источник во время записи и не может быть отменено после начала. Требуется ' + minFree + ' свободно. Освободите еще ' + extra + ' на целевом накопителе.');
             return;
           }
           if (requested === 'after') {
             const required = modalSizeText(data.requiredBytes || 0);
             const extra = modalSizeText(data.extraBytes || 0);
-            alert('Not enough free storage for safe ' + noun + '.\n\nSafe keeps the original until the new file is complete and verified. It requires ' + required + ' free. Free ' + extra + ' more on the target storage.');
+            alert('Недостаточно свободного места для безопасного ' + noun + '.\n\nВ безопасном режиме оригинал сохраняется до завершения и проверки нового файла. Требуется ' + required + ' свободно. Освободите еще ' + extra + ' на целевом накопителе.');
             return;
           }
           const extra = shortSize(data.extraBytes || 0);
-          const base = 'Free ' + extra + ' more to keep the original untouched until the new file is complete.';
+          const base = 'Освободите еще ' + extra + ', чтобы сохранить оригинал нетронутым до завершения создания нового файла.';
           if (data.canStreamDelete) {
-            const msg = 'Not enough free storage for the safer path.\n\nDelete while processing can damage the original source if the operation stops.\n\n' + base;
+            const msg = 'Недостаточно свободного места для более безопасного пути.\n\nУдаление во время обработки может повредить исходный файл, если операция будет прервана.\n\n' + base;
             if (confirm(msg)) {
               await startAction(g, true, overrideAction, compressFormat, deletePolicy, usbId, compressionDestination);
               return;
             }
           } else {
-            alert('Not enough free storage.\n\n' + base);
+            alert('Недостаточно свободного места.\n\n' + base);
           }
         } else {
           alert(formatByteText(err.message));
@@ -7517,9 +7662,10 @@
     }
 
     async function cancelActiveJob(activeId) {
-      const id = activeId || String((state.job && state.job.activeId) || '');
+      const id = activeId ||
+        String((state.job && state.job.activeId) || '');
       if (state.job && state.job.cancelDisabled) {
-        alert(formatByteText(state.job.cancelDisabledReason || 'Operation cannot be cancelled now'));
+        alert(formatByteText(state.job.cancelDisabledReason || 'Операция не может быть отменена сейчас'));
         return;
       }
       if (id) {
@@ -7538,6 +7684,7 @@
             state.job.cancelRequested = false;
           }
           renderDetail(true);
+          
           renderHistory(true);
           alert(formatByteText(err.message));
         });
@@ -7573,7 +7720,7 @@
       const btn = $('terminate-top');
       if (btn) {
         btn.disabled = true;
-        btn.title = 'Game Compressor terminated';
+        btn.title = 'Работа Game Compressor завершена';
         btn.classList.remove('is-terminate-needed');
       }
       const app = document.querySelector('.app');
@@ -7582,19 +7729,19 @@
       app.innerHTML =
         '<div class="terminated-screen" role="status" aria-live="assertive">' +
         '<div class="terminated-icon" aria-hidden="true">' + icon('power') + '</div>' +
-        '<h2 class="terminated-title">Game Compressor terminated</h2>' +
-        '<p class="terminated-copy">Exit this window and enjoy playing your games.</p>' +
+        '<h2 class="terminated-title">Работа Game Compressor завершена</h2>' +
+        '<p class="terminated-copy">Выйдите из этого окна и наслаждайтесь своими играми.</p>' +
         '</div>';
     }
 
     async function terminateProgram() {
       const btn = $('terminate-top');
-      if (!confirm('Terminate Game Compressor now?\n\nRecommended before playing games because leaving it running can have minor effects on game performance.')) {
+      if (!confirm('Завершить работу Game Compressor RU сейчас?\n\nРекомендуется сделать это перед игрой, так как оставленная запущенной программа может незначительно повлиять на производительность игры.')) {
         return;
       }
       if (btn) {
         btn.disabled = true;
-        btn.title = 'Terminating Game Compressor';
+        btn.title = 'Зазавершение работы Game Compressor RU';
       }
       requestShutdownAfterTerminate();
       showTerminatedScreen();
@@ -7613,6 +7760,7 @@
       $('usb-close').innerHTML = icon('close');
       $('ampr-version-close').innerHTML = icon('close');
       $('format-close').innerHTML = icon('close');
+ 
       $('uncompress-close').innerHTML = icon('close');
       $('delete-close').innerHTML = icon('close');
 
@@ -7661,6 +7809,7 @@
             state.compressSourcePolicy = 'keep';
             state.compressDeletePolicy = 'after';
           } else {
+      
             state.compressSourcePolicy = 'after';
             state.compressDeletePolicy = handling === 'stream' ? 'stream' : 'after';
           }
@@ -7675,7 +7824,8 @@
           if (destination === 'internal' && hasAlternateCompressUsbTargets(state.compressGame)) {
             state.compressDestinationChooserOpen = !state.compressDestinationChooserOpen;
             if (state.compressDestination !== 'internal' && state.compressDestination !== 'usb') {
-              state.compressDestination = 'internal';
+          
+            state.compressDestination = 'internal';
             }
           } else {
             state.compressDestination = destination;
@@ -7683,6 +7833,7 @@
           }
           syncCompressSourcePolicyFromDestination();
           if (state.compressDestination === 'usb' && !state.compressUsbId && state.usb[0]) {
+    
             state.compressUsbId = state.usb[0].id || '';
           }
           updateCompressModalSelection();
@@ -7704,6 +7855,7 @@
           if (state.uncompressDestination === 'usb' && !state.uncompressUsbId && state.usb[0]) {
             state.uncompressUsbId = state.usb[0].id || '';
           }
+       
           updateUncompressModalSelection();
         });
       });
@@ -7737,6 +7889,7 @@
           event.preventDefault();
           retryCompressSkippingSpaceCheck(retry.getAttribute('data-skip-space-retry') || '');
           return;
+      
         }
         if (!state.secondaryMenuFor) return;
         if (event.target.closest('.secondary-menu')) return;
@@ -7756,7 +7909,7 @@
       window.addEventListener('scroll', () => {
         if (state.secondaryMenuFor) positionSecondaryMenu();
       }, true);
-
+											 
       renderAppChrome();
       loadAppStatus();
       loadUiSettings();
@@ -7770,7 +7923,7 @@
         }
       }, 10000);
     });
-  </script>
+    </script>
 </body>
 
 </html>
