@@ -1,33 +1,24 @@
 # Game Compressor 1.0.4
 
-Game Compressor 1.0.4 adds a multilingual interface and improves compatibility
-with firmware 4.51, APR-EMU folder workflows, and ShadowMountPlus launch
-layouts.
+В версии Game Compressor 1.0.4 появился многоязычный интерфейс, а также ряд улучшений совместимости с прошивкой 4.51, играми APR-EMU в формате папки и различными вариантами запуска ShadowMountPlus.
 
-Compared against `v1.0.3`.
+Изменения ниже приведены относительно `v1.0.3`.
 
-## Key Changes
+## Основные изменения
 
-- Added German, French, Arabic, Italian, Spanish, and Simplified Chinese
-  translations, with automatic system-language selection and a saved manual
-  language selector.
-- Added right-to-left layout support for Arabic and localized Game Compressor
-  launcher titles for every supported language.
-- Improved firmware 4.51 browser compatibility and added clearer web-server
-  startup diagnostics.
-- Improved relaunch handling when a previous Game Compressor instance leaves
-  port 5910 open but no longer answers the local HTTP handoff.
-- Added ShadowMountPlus executable discovery under `/data/ps5_autoloader` in
-  addition to Payload Manager locations.
+- Добавлены переводы на немецкий, французский, арабский, итальянский, испанский и упрощённый китайский языки.
+- Язык интерфейса теперь может автоматически определяться по системным настройкам, а выбранный вручную язык сохраняется.
+- Для арабского языка добавлена полноценная поддержка интерфейса справа налево.
+- Название ярлыка Game Compressor на главном экране теперь локализуется для всех поддерживаемых языков.
+- Улучшена совместимость встроенного браузера на прошивке 4.51.
+- Добавлена более подробная диагностика запуска веб-сервера, чтобы проще было определить причину проблем при старте.
+- Улучшен повторный запуск Game Compressor в ситуации, когда предыдущий экземпляр оставил порт `5910` занятым, но уже не отвечает на локальные HTTP-запросы.
+- ShadowMountPlus теперь дополнительно ищется в `/data/ps5_autoloader`, а не только в стандартных каталогах Payload Manager.
 
-## Fixes
+## Исправления
 
-- Fixed `Build AMPR Index` for directly detected game folders so enqueue and
-  worker resolution use the same APR-EMU probe result.
-- Fixed APR-EMU module file permissions for affected deployment and loading
-  paths.
-- Fixed the compression wizard so `Delete after verified` keeps its own
-  free-space and deletion explanation when switching source-preservation
-  options.
+- Исправлена работа `Build AMPR Index` для игр, которые были обнаружены напрямую как папки. Теперь постановка задачи в очередь и дальнейшая обработка используют один и тот же результат определения APR-EMU.
+- Исправлены права доступа к файлам модулей APR-EMU в сценариях, где это могло мешать их копированию, развёртыванию или загрузке.
+- Исправлен мастер сжатия: при выборе `Delete after verified` теперь корректно сохраняются собственные пояснения по требуемому свободному месту и удалению исходных файлов при переключении между вариантами сохранения оригинала.
 
-See `CHANGELOG.md` for the full detailed change list.
+Полный список изменений доступен в `CHANGELOG.md`.
