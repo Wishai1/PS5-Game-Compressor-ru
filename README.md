@@ -1,113 +1,86 @@
 # PS5 Game Compressor
 
-Standalone PS5 payload for compressing, unpacking, validating, repairing, and
-moving ShadowMountPlus-mounted games from a simple web UI.
+Автономный payload для PS5, предназначенный для сжатия, распаковки, проверки, восстановления и перемещения игр, смонтированных через ShadowMountPlus, с управлением через простой веб-интерфейс.
 
-Game Compressor is made for the day-to-day workflow after your games are already
-mounted through ShadowMountPlus: pick a title, choose an action, and let the PS5
-do the work. The app keeps long operations running on the console even if the
-browser window is closed.
+Game Compressor создан для повседневной работы с играми, которые уже смонтированы через ShadowMountPlus: выберите игру, укажите действие — и PS5 выполнит всё остальное. Длительные операции продолжают выполняться на консоли, даже если окно браузера закрыто.
 
-## Main Features
+## Основные возможности
 
-- Compress mounted game folders or images into FF-PFSC output.
-- Choose PFS or exFAT output when compressing.
-- Automatically build APR Emu `ampr_emu.index` before compressing APR titles.
-- Manually run `Build AMPR Index` on a folder when you only want to refresh the
-  APR index.
-- Validate compressed games and repair detected PFSC block issues when possible.
-- Uncompress compressed games back to folder/app form.
-- Move supported titles between internal storage and USB storage.
-- Track progress, speed, estimated remaining time, and operation history.
-- Keep operations running on the PS5 even if the browser tab closes.
-- Install or refresh a PS5 home-screen launcher tile:
+- Сжатие смонтированных папок игр или образов в формат FF-PFSC.
+- Выбор PFS или exFAT в качестве выходного формата при сжатии.
+- Автоматическое создание APR Emu `ampr_emu.index` перед сжатием игр APR.
+- Возможность вручную запустить `Build AMPR Index` для папки, если требуется только обновить APR-индекс.
+- Проверка сжатых игр и восстановление обнаруженных повреждённых блоков PFSC, когда это возможно.
+- Распаковка сжатых игр обратно в формат папки/приложения.
+- Перемещение поддерживаемых игр между внутренним накопителем и USB-накопителем.
+- Отслеживание прогресса, скорости, примерного оставшегося времени и истории операций.
+- Продолжение операций на PS5 даже после закрытия вкладки браузера.
+- Установка или обновление ярлыка Game Compressor на главном экране PS5:
 
 ```text
 Game Compressor / PSGC50001 -> http://127.0.0.1:5910/
 ```
 
-The PS5 home-screen tile opens the Game Compressor web UI in the browser. It is
-not the compression worker itself. Compression, validation, repair, move, and
-uncompress jobs continue on the PS5 if you close the browser window or reopen
-the tile later.
+Ярлык на главном экране PS5 открывает веб-интерфейс Game Compressor в браузере. Сам ярлык не выполняет сжатие. Операции сжатия, проверки, восстановления, перемещения и распаковки продолжают выполняться на PS5, даже если закрыть окно браузера или позже снова открыть ярлык.
 
-## APR Emu Support
+## Поддержка APR Emu
 
-APR Emu titles need an `ampr_emu.index` file and the correct ShadowMountPlus
-read-only image settings when they are run from internal SSD. Game Compressor
-handles those details for the common workflows:
+Для игр APR Emu требуется файл `ampr_emu.index`, а также правильные настройки образа ShadowMountPlus в режиме только для чтения, если игра запускается с внутреннего SSD. Game Compressor автоматически выполняет эти действия для наиболее распространённых сценариев:
 
-- To compress a folder-format APR Emu game from USB and run it from internal
-  SSD, plug in the USB drive, select the title, and choose `Compress`. Game
-  Compressor builds `ampr_emu.index` using the same workflow as
-  `build_ampr_index.py`, writes the ShadowMountPlus read-only and sector-size
-  settings, creates the `.ffpfsc` image, mounts it, and validates the mounted
-  image byte-for-byte against the original.
-- If the compressed game stutters and you still want it on internal SSD, open
-  the secondary action menu, choose `Uncompress`, then select `exFAT`. The
-  ShadowMountPlus settings and `ampr_emu.index` are already in place, so Game
-  Compressor leaves them unchanged and creates an uncompressed exFAT image.
-- If you already know the game should stay uncompressed, open the secondary
-  action menu, choose `Make Image`, then select `exFAT` and `Internal SSD`.
-  Game Compressor detects the APR Emu title, builds or refreshes
-  `ampr_emu.index`, applies the read-only ShadowMountPlus settings, and creates
-  the uncompressed image.
-- If you already have an exFAT image and `ampr_emu.index` exists, use `Set Read
-  Only` from the secondary action menu to apply the ShadowMountPlus read-only
-  settings for that image.
+- Чтобы сжать игру APR Emu в формате папки с USB и затем запускать её с внутреннего SSD, подключите USB-накопитель, выберите игру и нажмите `Compress`. Game Compressor создаст `ampr_emu.index` тем же способом, что и `build_ampr_index.py`, запишет настройки ShadowMountPlus для режима только для чтения и размера сектора, создаст образ `.ffpfsc`, смонтирует его и побайтово проверит смонтированный образ относительно оригинала.
+- Если сжатая игра работает с подтормаживаниями, но вы всё равно хотите хранить её на внутреннем SSD, откройте меню дополнительных действий, выберите `Uncompress`, затем выберите `exFAT`. Настройки ShadowMountPlus и `ampr_emu.index` уже будут подготовлены, поэтому Game Compressor оставит их без изменений и создаст несжатый exFAT-образ.
+- Если вы заранее знаете, что игру лучше оставить несжатой, откройте меню дополнительных действий, выберите `Make Image`, затем выберите `exFAT` и `Internal SSD`. Game Compressor определит, что это игра APR Emu, создаст или обновит `ampr_emu.index`, применит настройки ShadowMountPlus только для чтения и создаст несжатый образ.
+- Если у вас уже есть exFAT-образ и файл `ampr_emu.index` существует, используйте `Set Read Only` в меню дополнительных действий, чтобы применить настройки ShadowMountPlus только для чтения к этому образу.
 
-The only unsupported automatic case is an existing exFAT image with no
-`ampr_emu.index`. For that case, run the game once from external USB without
-read-only settings so APR Emu can create its index, confirm the game starts,
-then copy it to internal SSD and use `Set Read Only`.
+Единственный сценарий, который не поддерживается автоматически, — существующий exFAT-образ без файла `ampr_emu.index`. В этом случае один раз запустите игру с внешнего USB без режима только для чтения, чтобы APR Emu смог создать индекс. Убедитесь, что игра запускается, после чего скопируйте её на внутренний SSD и используйте `Set Read Only`.
 
-Non-APR titles keep the normal compression path. When APR indexing is performed,
-the selected game screen and operation history show `APR indexed`.
+Игры без APR используют обычный режим сжатия. Если для игры выполнялось индексирование APR, на экране выбранной игры и в истории операций появится статус `APR indexed`.
 
-The in-app `APR-EMU Version` picker uses Pippo's public APR-EMU manifest and
-binary mirror:
+Встроенный выбор версии `APR-EMU Version` использует публичный манифест APR-EMU и зеркало бинарных файлов от Pippo:
 
 ```text
 https://pippo26442999.github.io/.exFAT/ampr-emu-drakmor/manifest.json
 ```
 
-The manifest and hosted files are provided by Pippo (`pippo26442999`). Manifest
-entries are downloaded by the browser, uploaded to Game Compressor, cached under
-`/data/GameCompressor/ampr-emu`, and then applied to the selected title or
-image. Custom `.sprx`/`.prx` files can also be uploaded manually from a desktop
-browser. The upstream APR Emu project source is
-[drakmor/ampr_emu](https://github.com/drakmor/ampr_emu).
+Манифест и размещённые файлы предоставляются Pippo (`pippo26442999`). Записи из манифеста загружаются браузером, передаются в Game Compressor, кэшируются в:
 
-## Requirements
+```text
+/data/GameCompressor/ampr-emu
+```
 
-- A PS5 homebrew environment capable of running payload ELFs.
-- [ShadowMountPlus](https://github.com/drakmor/ShadowMountPlus) latest version,
-  installed and managing mounted titles.
-- [KStuff Lite](https://github.com/EchoStretch/kstuff-lite/releases/tag/v1.07)
-  1.07 Beta or later.
-- [Payload Manager](https://github.com/itsPLK/ps5-payload-manager) or another
-  method to launch `game-compressor.elf`.
+после чего применяются к выбранной игре или образу.
 
-This project assumes you already understand the risks of running PS5 homebrew
-payloads. Keep backups of important data and test with non-critical titles
-first.
+Пользовательские файлы `.sprx`/`.prx` также можно вручную загрузить через браузер с компьютера.
 
-## Build
+Исходный проект APR Emu:
 
-Set `PS5_PAYLOAD_SDK` to your local SDK path, then run `make`:
+[drakmor/ampr_emu](https://github.com/drakmor/ampr_emu)
+
+## Требования
+
+- Homebrew-среда PS5 с возможностью запуска payload ELF.
+- Последняя версия [ShadowMountPlus](https://github.com/drakmor/ShadowMountPlus), установленная и используемая для управления смонтированными играми.
+- [KStuff Lite](https://github.com/EchoStretch/kstuff-lite/releases/tag/v1.07) версии 1.07 Beta или новее.
+- [Payload Manager](https://github.com/itsPLK/ps5-payload-manager) либо другой способ запуска `game-compressor.elf`.
+
+Предполагается, что пользователь понимает риски запуска homebrew payload на PS5. Сохраняйте резервные копии важных данных и сначала тестируйте программу на играх, потеря которых не критична.
+
+## Сборка
+
+Укажите путь к локальному SDK в переменной `PS5_PAYLOAD_SDK`, затем выполните `make`:
 
 ```sh
 export PS5_PAYLOAD_SDK=/path/to/ps5-payload-sdk
 make
 ```
 
-The build output is:
+Результатом сборки будет:
 
 ```text
 game-compressor.elf
 ```
 
-Generated build outputs are intentionally ignored by git:
+Сгенерированные файлы сборки намеренно исключены из git:
 
 ```text
 build/
@@ -115,99 +88,88 @@ gen/
 game-compressor.elf
 ```
 
-## Deploy
+## Установка
 
-Copy the built ELF to your PS5 payload folder. A typical Payload Manager path is:
+Скопируйте собранный ELF-файл в папку payload на PS5.
+
+Типичный путь для Payload Manager:
 
 ```text
 /data/pldmgr/payloads/game-compressor/game-compressor.elf
 ```
 
-This repo also includes Payload Manager metadata in:
+В репозитории также присутствуют метаданные Payload Manager:
 
 ```text
 payload-manager/game-compressor.elf.json
 ```
 
-If you rebuild the ELF, update that JSON checksum before publishing or
-redistributing it.
+Если вы пересобираете ELF-файл, перед публикацией или распространением обновите контрольную сумму в этом JSON-файле.
 
-## How To Use
+## Использование
 
-1. Make sure ShadowMountPlus has mounted one or more games.
-2. Launch `game-compressor.elf` from Payload Manager or your payload loader.
-3. Open the web UI:
+1. Убедитесь, что ShadowMountPlus смонтировал одну или несколько игр.
+2. Запустите `game-compressor.elf` через Payload Manager или другой загрузчик payload.
+3. Откройте веб-интерфейс:
 
 ```text
 http://<PS5_IP>:5910/
 ```
 
-4. Pick a game from the left sidebar.
-5. Use the primary action:
-   - Folder/image titles show `Compress`.
-   - Compressed titles show `Validate and Repair`.
-6. For compression, choose either `PFS` or `exFAT` when prompted.
-7. Use the secondary action menu for supported actions such as:
+4. Выберите игру в левой боковой панели.
+5. Используйте основное действие:
+   - Для игр в формате папки/образа отображается `Compress`.
+   - Для сжатых игр отображается `Validate and Repair`.
+6. При сжатии выберите `PFS` или `exFAT`.
+7. В меню дополнительных действий доступны такие функции, как:
    - `Build AMPR Index`
    - `Uncompress`
    - `Move to USB`
    - `Move to Internal SSD`
-8. Use the History button to review previous operations.
+8. Используйте кнопку History для просмотра истории выполненных операций.
 
-The app remembers the last game you viewed using a browser cookie, so reopening
-the UI returns to that title when it is still available.
+Приложение запоминает последнюю открытую игру с помощью cookie браузера, поэтому при повторном открытии интерфейса будет выбрана эта же игра, если она всё ещё доступна.
 
-If you close the browser window during an operation, open the Game Compressor
-tile again or go back to `http://<PS5_IP>:5910/` to see the current job.
+Если вы закрыли окно браузера во время выполнения операции, снова откройте ярлык Game Compressor или перейдите по адресу:
 
-## Compression Settings
+```text
+http://<PS5_IP>:5910/
+```
 
-When you choose `Compress`, Game Compressor asks for the output format,
-destination, and how to handle the original source.
+чтобы увидеть текущую операцию.
 
-### Format
+## Настройки сжатия
 
-`Compress` always produces a `.ffpfsc` file, which is a compressed PFS container.
-The format choice controls the nested image stored inside that compressed
-container:
+После выбора `Compress` Game Compressor предложит выбрать выходной формат, место сохранения и способ обработки исходных данных.
 
-- `exFAT` is the default and recommended nested image format. It stores an exFAT
-  image inside the `.ffpfsc` output and is the preferred option for most games,
-  especially APR Emu workflows.
-- `PFS Experimental` stores a PFS image inside the `.ffpfsc` output. Use it only
-  when you specifically want to test the PFS nested-image path.
+### Формат
 
-### Destination
+`Compress` всегда создаёт файл `.ffpfsc`, который представляет собой сжатый PFS-контейнер.
 
-- `Compress in place` writes the compressed `.ffpfsc` container next to the
-  currently selected game.
-- `Internal SSD` writes the compressed output under `/data/homebrew`. This is
-  only shown when the selected game is not already on internal storage.
-- `External Storage` writes the compressed output to a selected USB/external
-  target. If the game is already on external storage, Game Compressor may show a
-  `Compress to...` picker so you can choose internal SSD or another USB target.
+Выбранный формат определяет тип вложенного образа внутри этого сжатого контейнера:
 
-### Original Handling
+- `exFAT` — формат по умолчанию и рекомендуемый вариант. Внутри `.ffpfsc` хранится exFAT-образ. Этот вариант предпочтителен для большинства игр, особенно при работе с APR Emu.
+- `PFS Experimental` — внутри `.ffpfsc` хранится PFS-образ. Используйте этот вариант только в том случае, если специально хотите протестировать режим вложенного PFS-образа.
 
-- `Keep original` leaves the source folder or image untouched. This is the
-  safest choice and requires enough free space for the compressed output.
-- `Delete after verified` writes and validates the compressed output first, then
-  removes the original source. This is the default for in-place compression. It
-  still needs full-size temporary free space because the original is kept until
-  verification succeeds.
-- `Destructive` deletes source data while writing the compressed output. It
-  requires at least 1 GB of free space, cannot be cancelled after the unsafe
-  phase begins, and is only available for same-storage folder compression. It is
-  not available when compressing to another drive or when using `Make Image`.
+### Место сохранения
 
-When compressing to internal SSD or external storage, Game Compressor keeps the
-original by default. If you choose to remove the original, it uses the safer
-`Delete after verified` behavior.
+- `Compress in place` — создаёт сжатый контейнер `.ffpfsc` рядом с выбранной игрой.
+- `Internal SSD` — сохраняет сжатый результат в `/data/homebrew`. Этот пункт отображается только в том случае, если выбранная игра ещё не находится на внутреннем накопителе.
+- `External Storage` — сохраняет сжатый результат на выбранный USB или внешний накопитель. Если игра уже находится на внешнем накопителе, Game Compressor может показать окно `Compress to...`, где можно выбрать внутренний SSD или другой USB-накопитель.
 
-## Game Discovery
+### Обработка оригинала
 
-Mounted games are shown automatically. Game Compressor also scans known game
-storage folders, including:
+- `Keep original` — исходная папка или образ остаются без изменений. Это самый безопасный вариант, но требуется достаточно свободного места для хранения сжатого результата.
+- `Delete after verified` — сначала создаётся и проверяется сжатый результат, после чего исходные данные удаляются. Это вариант по умолчанию при сжатии на том же накопителе. Всё равно требуется свободное место размером примерно с исходную игру, поскольку оригинал сохраняется до завершения проверки.
+- `Destructive` — исходные данные удаляются непосредственно во время записи сжатого результата. Требуется минимум 1 ГБ свободного места. После начала небезопасной фазы такую операцию нельзя отменить. Доступно только при сжатии папки на том же накопителе. Этот режим недоступен при сжатии на другой накопитель или при использовании `Make Image`.
+
+При сжатии на внутренний SSD или внешний накопитель Game Compressor по умолчанию сохраняет оригинал. Если вы выбираете удаление оригинала, используется более безопасный режим `Delete after verified`.
+
+## Обнаружение игр
+
+Смонтированные игры отображаются автоматически.
+
+Game Compressor также сканирует известные каталоги хранения игр, включая:
 
 ```text
 /data/homebrew
@@ -223,44 +185,47 @@ storage folders, including:
 /mnt/usb0/etaHEN/games through /mnt/usb7/etaHEN/games
 ```
 
-## When You Are Done
+## После завершения работы
 
-Game Compressor should only be launched when you need to compress, validate,
-repair, move, or unpack games. After your games are compressed and you no longer
-need the web UI, it is preferred that Game Compressor is no longer running.
+Game Compressor рекомендуется запускать только тогда, когда необходимо сжать, проверить, восстановить, переместить или распаковать игры.
 
-Use the terminate button in the top bar when you are done. Game Compressor
-removes its home-screen tile, stops the payload, and leaves a final screen
-telling you to exit the browser window.
+После того как игры сжаты и веб-интерфейс больше не требуется, рекомендуется завершить работу Game Compressor.
 
-## Notes
+Используйте кнопку завершения в верхней панели. Game Compressor удалит свой ярлык с главного экрана PS5, остановит payload и покажет финальный экран с сообщением о том, что окно браузера можно закрыть.
 
-- Launcher installation is nonfatal. If it fails, the web UI can still be used
-  directly from `http://<PS5_IP>:5910/`.
-- Payload operations are owned by the PS5-side worker, not the browser tab.
-- Compression and repair workflows can take a long time on large titles.
+## Примечания
 
-## Credits
+- Ошибка установки ярлыка не является критической. Если установить ярлык не удалось, веб-интерфейс всё равно можно открыть напрямую:
 
-Created by Juma Sayeh.
+```text
+http://<PS5_IP>:5910/
+```
 
-Tested by Osama Abualia.
+- Операции payload выполняются непосредственно процессом на стороне PS5, а не вкладкой браузера.
+- Сжатие и восстановление больших игр может занимать значительное время.
 
-Thanks to Pippo (`pippo26442999`) for maintaining the public APR-EMU manifest
-and binary mirror used by the in-app APR-EMU version picker.
+## Благодарности
 
-Built on and inspired by work from:
+Создатель проекта — Juma Sayeh.
+
+Тестирование — Osama Abualia.
+
+Спасибо Pippo (`pippo26442999`) за поддержку публичного манифеста APR-EMU и зеркала бинарных файлов, используемого встроенным выбором версии APR-EMU.
+
+Проект создан на основе и вдохновлён следующими разработками:
 
 - [PSBrew/MkPFS](https://github.com/PSBrew/MkPFS)
-- Drakmor's [ShadowMountPlus](https://github.com/drakmor/ShadowMountPlus),
-  [APR Emu](https://github.com/drakmor/ampr_emu), and `build_ampr_index.py`
-  work, which Game Compressor builds on for mounted-title support and PS5-side
-  `ampr_emu.index` generation.
+- Разработками Drakmor:
+  - [ShadowMountPlus](https://github.com/drakmor/ShadowMountPlus)
+  - [APR Emu](https://github.com/drakmor/ampr_emu)
+  - `build_ampr_index.py`
 
-Made with love in Palestine.
+Game Compressor использует эти наработки для поддержки смонтированных игр и генерации `ampr_emu.index` непосредственно на PS5.
 
-## Disclaimer
+Сделано с любовью в Палестине.
 
-This is homebrew software for experimental PS5 workflows. Use it at your own
-risk. The project is not affiliated with Sony, PlayStation, or any game
-publisher.
+## Отказ от ответственности
+
+Это homebrew-программное обеспечение предназначено для экспериментальных сценариев работы с PS5. Используйте его на свой страх и риск.
+
+Проект не связан с Sony, PlayStation или какими-либо издателями игр.
